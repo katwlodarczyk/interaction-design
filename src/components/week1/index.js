@@ -40,23 +40,23 @@ const StyledParagraph = styled.p`
     z-index: 10000;
     font-family: 'Montserrat', sans-serif;
 `;
-
-
-const testData = [
-    { bgcolor: "#6a1b9a", completed: 60 },
-    { bgcolor: "#00695c", completed: 30 },
-    { bgcolor: "#ef6c00", completed: 53 },
-  ];
-
   
 
-
 function Week1() {
-const [completed, setCompleted] = useState(0);
-
-useEffect(() => {
-    setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
-}, []);
+    const [progress, setProgress] = useState(0);
+    React.useEffect(() => {
+      const timer = setInterval(() => {
+        setProgress(oldProgress => {
+          if (oldProgress === 100) {
+            return 100;
+          }
+          return Math.min(oldProgress + 5, 100);
+        });
+      }, 500);
+    return () => {
+        clearInterval(timer);
+      };
+    }, []);
 
 return (
     <OuterWrapper>
@@ -65,7 +65,7 @@ return (
                 <img className="splash-img" src={shoppingCart} alt="" />
                 <StyledHeader>Hang in there!</StyledHeader>
                 <StyledParagraph>We are loading the products</StyledParagraph>
-                <ProgressBar bgcolor={"#a3b7ca"} completed={completed} />
+                <ProgressBar bgcolor={"#a3b7ca"} completed={progress} />
         </StyledWrapper>
     </OuterWrapper>
 );
