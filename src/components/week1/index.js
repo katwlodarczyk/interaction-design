@@ -40,6 +40,40 @@ const StyledParagraph = styled.p`
     font-family: 'Montserrat', sans-serif;
 `;
 
+
+const SyncBar = (props) => {
+   const {completed} = props;
+   const containerStyles = {
+       height: 20,
+       width: '100%',
+       backgroundColor: '#a3b7ca',
+       borderRadius: 50,
+        margin: 'auto',
+   }
+   const ChildStyles = {
+       height: '100%',
+       width: `${completed}%`,
+       backgroundColor: 'grey',
+       borderRadius: 'inherit',
+       textAlign: 'right',
+       transition: 'width 1s ease-in-out',
+   }
+   const labelStyles = {
+    color: 'white',
+    padding: 5,
+    fontWeight: 'normal',
+    fontSize: '14px',
+  }
+
+   return (
+       <div style={containerStyles}>
+           <div style={ChildStyles}>
+                <span style={labelStyles}>{`${completed}%`}</span>
+           </div>
+       </div>
+   );
+};
+
 const Week1 = () => (
     <OuterWrapper>
         <img class="blob" src={blob} alt="blob"/>
@@ -47,6 +81,7 @@ const Week1 = () => (
                 <img class="splash-img" src={shoppingCart} alt="" />
                 <StyledHeader>Hang in there!</StyledHeader>
                 <StyledParagraph>We are loading the products</StyledParagraph>
+                <SyncBar completed={40}></SyncBar>
         </StyledWrapper>
     </OuterWrapper>
 );
