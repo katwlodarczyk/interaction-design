@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import shoppingCart from "./../../assets/shopping-cart.gif";
 import blob from './../../assets/blob.png';
 import styled from 'styled-components';
+import ProgressBar from './sync-bar'
 
 const OuterWrapper = styled.div`
     width: 100vw;
@@ -41,49 +42,34 @@ const StyledParagraph = styled.p`
 `;
 
 
-const SyncBar = (props) => {
-   const {completed} = props;
-   const containerStyles = {
-       height: 20,
-       width: '100%',
-       backgroundColor: '#a3b7ca',
-       borderRadius: 50,
-        margin: 'auto',
-   }
-   const ChildStyles = {
-       height: '100%',
-       width: `${completed}%`,
-       backgroundColor: 'grey',
-       borderRadius: 'inherit',
-       textAlign: 'right',
-       transition: 'width 1s ease-in-out',
-   }
-   const labelStyles = {
-    color: 'white',
-    padding: 5,
-    fontWeight: 'normal',
-    fontSize: '14px',
-  }
+const testData = [
+    { bgcolor: "#6a1b9a", completed: 60 },
+    { bgcolor: "#00695c", completed: 30 },
+    { bgcolor: "#ef6c00", completed: 53 },
+  ];
 
-   return (
-       <div style={containerStyles}>
-           <div style={ChildStyles}>
-                <span style={labelStyles}>{`${completed}%`}</span>
-           </div>
-       </div>
-   );
-};
+  
 
-const Week1 = () => (
+
+function Week1() {
+const [completed, setCompleted] = useState(0);
+
+useEffect(() => {
+    setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
+}, []);
+
+return (
     <OuterWrapper>
-        <img class="blob" src={blob} alt="blob"/>
+        <img className="blob" src={blob} alt="blob"/>
         <StyledWrapper>
-                <img class="splash-img" src={shoppingCart} alt="" />
+                <img className="splash-img" src={shoppingCart} alt="" />
                 <StyledHeader>Hang in there!</StyledHeader>
                 <StyledParagraph>We are loading the products</StyledParagraph>
-                <SyncBar completed={40}></SyncBar>
+                <ProgressBar bgcolor={"#a3b7ca"} completed={completed} />
         </StyledWrapper>
     </OuterWrapper>
 );
+}
+
 
 export default Week1;

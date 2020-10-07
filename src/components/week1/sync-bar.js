@@ -1,42 +1,38 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
 
-const Wrapper = styled.div`
-    width: 20vw;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
-
-const span = styled.span`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 20px;
-    width: 50px;
-    color: #a3b7ca;
-    border: solid 1px black;
-    margin:0 auto;
-    z-index: 10000;
-`;
-
-const p = styled.p`
-    display: flex;
-    justify-content: center;
-    margin:0 auto;
-    z-index: 10000;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-`;
-
-
-const SyncBar = () => (
-    <Wrapper>
-        <span class="progress-bar">
-        </span>
-        <p class="progress-value"> progress </p>
-    </Wrapper>
-);
-
-export default SyncBar;
+const ProgressBar = (props) => {
+    const { bgcolor, completed } = props;
+  
+    const containerStyles = {
+      height: 20,
+      width: '100%',
+      backgroundColor: "#e0e0de",
+      borderRadius: 50,
+      margin: 50
+    }
+  
+    const fillerStyles = {
+      height: '100%',
+      width: `${completed}%`,
+      backgroundColor: bgcolor,
+      borderRadius: 'inherit',
+      textAlign: 'right',
+      transition: 'width 1s ease-in-out',
+    }
+  
+    const labelStyles = {
+      padding: 5,
+      color: 'white',
+      fontWeight: 'bold'
+    }
+  
+    return (
+      <div style={containerStyles}>
+        <div style={fillerStyles}>
+          <span style={labelStyles}>{`${completed}%`}</span>
+        </div>
+      </div>
+    );
+  };
+  
+  export default ProgressBar;
