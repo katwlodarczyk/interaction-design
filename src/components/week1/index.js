@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import shoppingCart from "./../../assets/shopping-cart.gif";
+import shoppingCart from "./../../assets/shopping-cart-gif.gif";
 import blob from './../../assets/blob.png';
 import styled from 'styled-components';
 import ProgressBar from './sync-bar'
@@ -52,7 +52,7 @@ function Week1() {
           }
           return Math.min(oldProgress + 5, 100);
         });
-      }, 500);
+      }, 400);
     return () => {
         clearInterval(timer);
       };
@@ -65,7 +65,7 @@ return (
                 <img className="splash-img" src={shoppingCart} alt="" />
                 <StyledHeader>Hang in there!</StyledHeader>
                 <StyledParagraph>We are loading the products</StyledParagraph>
-                <ProgressBar bgcolor={"#a3b7ca"} completed={progress} />
+                <ProgressBar bgcolor={"#6c63fe"} completed={progress} />
         </StyledWrapper>
     </OuterWrapper>
 );
