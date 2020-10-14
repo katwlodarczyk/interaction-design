@@ -11,3 +11,76 @@
   justify-content: center;
   width: 100%;
 }
+
+.week-display {
+  margin: 20px 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.week-display:hover {
+  transform: scale(1.05);
+}
+
+.flex-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  }
+
+.flex-item {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 30%;
+  -ms-flex: 0 1 30%;
+  flex: 0 1 30%;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  }
+
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  line-height: 200%;
+}
+
+li a:hover{
+  color: #4f49bd;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+
+a:active {
+  color: #000;
+  text-decoration: none;
+}
