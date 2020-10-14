@@ -60,7 +60,7 @@
 ul {
   display: flex;
   flex-direction: column;
-  list-style-type: none
+  list-style-type: none;
 }
 
 a {
