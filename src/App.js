@@ -27,8 +27,17 @@ const Home = () => (
       <ul class="flex-container">
         <li class="flex-item">
           <Link to="/week-1">
-            Week 1 Splash Screen
-            <img src="./assets/week1-display.jpg" class="week-display"/>
+          <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+	          <div className="flipper">
+		          <div className="front">
+              <img src="./assets/week1-display.jpg" className="week-display"/>
+              </div>
+              <div className="back">
+                <h1>Week 1:</h1>
+                <p>Splash screen</p>
+              </div>
+            </div>
+          </div>
           </Link>
         </li>
         <li class="flex-item">

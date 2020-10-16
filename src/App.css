@@ -1,3 +1,44 @@
+.flip-container {
+	perspective: 1000px;
+}
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 300px;
+  height: 400px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+
+.back {
+  transform: rotateY(180deg);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .img-wrapper {
   position: relative;
 }
@@ -88,4 +129,19 @@ a:visited {
 a:active {
   color: #000;
   text-decoration: none;
+}
+
+.go-back{
+  display: flex;
+  justify-content: start;
+   width: 64px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin: 10px 10px;
+}
+
+.go-back:hover{
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
 }

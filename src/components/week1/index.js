@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import shoppingCart from "./../../assets/shopping-cart-gif.gif";
 import blob from './../../assets/blob.png';
+import goback from './../../assets/back-icon.svg';
 import styled from 'styled-components';
 import ProgressBar from './sync-bar'
 
@@ -11,6 +12,7 @@ const OuterWrapper = styled.div`
     justify-content: center;
     align-items: center;
     background: #e4ecf8;
+    position: relative;
 `;
 
 const StyledWrapper = styled.div`
@@ -60,9 +62,11 @@ function Week1() {
 
 return (
     <OuterWrapper>
-        
+        <a href="./">
+            <img src={goback} className="go-back"></img>
+        </a>
         <StyledWrapper>
-            <div class="img-wrapper">
+            <div className="img-wrapper">
                 <img className="blob" src={blob} alt="blob"/>
                 <img className="splash-img" src={shoppingCart} alt="" />
             </div>
