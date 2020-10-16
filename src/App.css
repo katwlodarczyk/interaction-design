@@ -59,16 +59,12 @@
 }
 
 .week-display {
-  margin: 20px 0;
   width: 100%;
   height: 100%;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
 }
 
-.week-display:hover {
-  transform: scale(1.05);
-}
 
 .flex-container {
   display: -ms-flexbox;

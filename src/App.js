@@ -24,8 +24,8 @@ const Home = () => (
   <div>
     <h1>Interaction Design</h1>
     <nav>
-      <ul class="flex-container">
-        <li class="flex-item">
+      <ul className="flex-container">
+        <li className="flex-item">
           <Link to="/week-1">
           <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
 	          <div className="flipper">
@@ -34,14 +34,25 @@ const Home = () => (
               </div>
               <div className="back">
                 <h1>Week 1:</h1>
-                <p>Splash screen</p>
+                 <p>Splash Screen</p>
               </div>
             </div>
           </div>
           </Link>
         </li>
         <li class="flex-item">
-          <Link to="/week-2">Week 2: Notification</Link>
+          <Link to="/week-2"></Link>
+          <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+	          <div className="flipper">
+		          <div className="front">
+                <img src="./assets/week1-display.jpg" className="week-display"/>
+              </div>
+              <div className="back">
+                <h1> Week 2:</h1>
+                <p>Notification</p>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </nav>

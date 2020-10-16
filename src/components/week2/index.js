@@ -130,23 +130,23 @@ const Flashlight = styled.img`
     opacity:1;
 `;
 
-function Clock(props) {
+// function Clock(props) {
 
-    return (
-      <div>
-         {props.date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
-      </div>
-    );
-  }
+//     return (
+//       <div>
+//          {props.date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
+//       </div>
+//     );
+//   }
   
-  function tick() {
-    ReactDOM.render(
-      <Clock date={new Date()} />,
-      document.getElementById('time')
-    );
-  }
+//   function tick() {
+//     ReactDOM.render(
+//       <Clock date={new Date()} />,
+//       document.getElementById('time')
+//     );
+//   }
   
-  setInterval(tick, 1000);
+//   setInterval(tick, 1000);
   
 //   function Date(props) {
 
@@ -179,7 +179,7 @@ function Week2() {
                     <StyledIphone src={iphone} className="iphone"></StyledIphone>
                     <Wallpaper src={wallpaper}></Wallpaper>
                     <Intersection className="intersection">
-                       <ClockDiv id="time"></ClockDiv>
+                       <ClockDiv id="time">12:54</ClockDiv>
                        <DateDiv id="date">Friday 16 October</DateDiv>
                        <FunctionButtonsSection>
                             <FlashlightButton href="/#" className="flashlight-button">
