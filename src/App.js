@@ -32,7 +32,7 @@ const Home = () => (
           </Link>
         </li>
         <li class="flex-item">
-          <Link to="/week-2">Week 2 Notification</Link>
+          <Link to="/week-2">Week 2: Notification</Link>
         </li>
       </ul>
     </nav>

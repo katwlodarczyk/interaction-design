@@ -60,12 +60,15 @@ function Week1() {
 
 return (
     <OuterWrapper>
-        <img className="blob" src={blob} alt="blob"/>
+        
         <StyledWrapper>
+            <div class="img-wrapper">
+                <img className="blob" src={blob} alt="blob"/>
                 <img className="splash-img" src={shoppingCart} alt="" />
-                <StyledHeader>Hang in there!</StyledHeader>
-                <StyledParagraph>We are loading the products</StyledParagraph>
-                <ProgressBar bgcolor={"#6c63fe"} completed={progress} />
+            </div>
+            <StyledHeader>Hang in there!</StyledHeader>
+            <StyledParagraph>We are loading the products</StyledParagraph>
+            <ProgressBar bgcolor={"#6c63fe"} completed={progress} />
         </StyledWrapper>
     </OuterWrapper>
 );
