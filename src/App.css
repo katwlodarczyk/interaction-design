@@ -7,8 +7,8 @@
 }
 
 .flip-container, .front, .back {
-  width: 300px;
-  height: 400px;
+  width: 307px;
+  height: 410px;
 }
 
 .flipper {
@@ -144,4 +144,22 @@ a:active {
 .go-back:hover{
   transform: scale(1.1);
   transition: .3s ease-in-out;
+}
+
+.intersection::after {
+  content: "";
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    border-radius: 12px;
+    bottom: 18%;
+    left: calc(50% - 50px);
+    position: absolute;
+
+}
+
+.flashlight-button:hover{
+  transition: ease-in-out;
+  opacity: 1;
+  background-color: white;
 }
