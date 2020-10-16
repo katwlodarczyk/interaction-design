@@ -5,6 +5,7 @@ import Week2 from './components/week2';
 import styled from 'styled-components';
 import css from './App.css';
 import Week1Display from './assets/week1-display.jpg';
+import Week2Display from './assets/week2-display.jpg';
 
 const OuterWrapper = styled.div`
   margin: 0 auto;
@@ -34,14 +35,14 @@ const Home = () => (
                  <p>Splash Screen</p>
               </div>
               <div className="back">
-                 <img src="./assets/week1-display.jpg" className="week-display"/>
+                 <img src="/assets/week1-display.jpg" className="week-display"/>
               </div>
             </div>
           </div>
           </Link>
         </li>
         <li class="flex-item">
-          <Link to="/week-2"></Link>
+          <Link to="/week-2">
           <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
 	          <div className="flipper">
 		          <div className="front">
@@ -49,10 +50,11 @@ const Home = () => (
                 <p>Notification</p>
               </div>
               <div className="back">
-                <img src="./assets/week1-display.jpg" className="week-display"/>
+                <img src="./assets/week2-display.jpg" className="week-display"/>
               </div>
             </div>
           </div>
+          </Link>
         </li>
       </ul>
     </nav>
