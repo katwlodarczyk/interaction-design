@@ -21,22 +21,22 @@
 	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
-	left: 0;
+  left: 0;
 }
 
 .front {
 	z-index: 2;
-	transform: rotateY(0deg);
-}
-
-
-.back {
-  transform: rotateY(180deg);
+  transform: rotateY(0deg);
   border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+
+.back {
+  transform: rotateY(180deg);
 }
 
 .img-wrapper {

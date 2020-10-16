@@ -30,11 +30,11 @@ const Home = () => (
           <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
 	          <div className="flipper">
 		          <div className="front">
-              <img src="./assets/week1-display.jpg" className="week-display"/>
+              <h1>Week 1:</h1>
+                 <p>Splash Screen</p>
               </div>
               <div className="back">
-                <h1>Week 1:</h1>
-                 <p>Splash Screen</p>
+                 <img src="./assets/week1-display.jpg" className="week-display"/>
               </div>
             </div>
           </div>
@@ -45,11 +45,11 @@ const Home = () => (
           <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
 	          <div className="flipper">
 		          <div className="front">
-                <img src="./assets/week1-display.jpg" className="week-display"/>
+              <h1> Week 2:</h1>
+                <p>Notification</p>
               </div>
               <div className="back">
-                <h1> Week 2:</h1>
-                <p>Notification</p>
+                <img src="./assets/week1-display.jpg" className="week-display"/>
               </div>
             </div>
           </div>
