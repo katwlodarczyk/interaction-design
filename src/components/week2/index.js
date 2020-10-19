@@ -36,8 +36,6 @@ const Intersection = styled.div`
    position: relative;
    display: flex;
    flex-direction: column;
-   justify-content: flex-start;
-   padding-top: 100px;
    width: 100%;
    height: 100%;
 `;
@@ -47,7 +45,7 @@ const StyledIphone = styled.img`
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 5;
+    z-index: 0;
 `;
 
 const Wallpaper = styled.img`
@@ -60,6 +58,11 @@ const Wallpaper = styled.img`
     border-radius: 60px;
     object-fit: cover;
 `; 
+
+const TopSection = styled.div`
+    padding-top:100px;
+`;
+
 const ClockDiv = styled.div`
     position:relative;
     font-size: 50px;
@@ -87,15 +90,22 @@ const FunctionButtonsSection = styled.div`
 const CameraButton = styled.a`
     padding: 10px 10px;
     background-color: #dadada;
-    opacity: 0.6;
+    // opacity: 0.6;
     border-radius: 100px;
+    line-height: 100%;
+    position: absolute;
+    bottom: 55px;
+    right: 19%;
 `;
 
 const FlashlightButton = styled.a`
     padding: 10px 10px;
     background-color: #dadada;
-    opacity: 0.6;
     border-radius: 100px;
+    line-height: 100%;
+    position: absolute;
+    bottom: 58px;
+    right: 66%;
 `;
 
 const Camera = styled.img`
@@ -107,7 +117,6 @@ const Camera = styled.img`
 const Flashlight = styled.img`
     width: 24px;
     height: 24px;
-    opacity:1;
 `;
 
 function Week2() {
@@ -121,15 +130,17 @@ function Week2() {
                     <StyledIphone src={iphone} className="iphone"></StyledIphone>
                     <Wallpaper src={wallpaper}></Wallpaper>
                     <Intersection className="intersection">
-                       <ClockDiv id="time">12:54</ClockDiv>
-                       <DateDiv id="date">Friday 16 October</DateDiv>
-                       <Notification />
+                        <TopSection>
+                            <ClockDiv id="time">12:54</ClockDiv>
+                            <DateDiv id="date">Friday 16 October</DateDiv>
+                        </TopSection>
+                        <Notification />
                        <FunctionButtonsSection>
-                            <FlashlightButton href="/#" className="flashlight-button">
-                                <Flashlight src={flashlight} alt="flashlight"></Flashlight>
+                            <FlashlightButton href="#" className="flashlight-button">
+                                <Flashlight src={flashlight} className="function-icon" alt="flashlight"></Flashlight>
                             </FlashlightButton>
-                            <CameraButton href="/#" className="camera-button">
-                                <Camera src={camera} alt="camera"></Camera>
+                            <CameraButton href="#" className="camera-button">
+                                <Camera src={camera} alt="camera" className="function-icon"></Camera>
                             </CameraButton>
                        </FunctionButtonsSection>
                     </Intersection>

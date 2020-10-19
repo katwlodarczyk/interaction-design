@@ -147,16 +147,20 @@ a:active {
     height: 4px;
     background-color: white;
     border-radius: 12px;
-    bottom: 18%;
+    bottom: 5%;
     left: calc(50% - 50px);
     position: absolute;
 
 }
 
 .flashlight-button:hover{
+  transform: scale(1.05);
   transition: ease-in-out;
-  opacity: 1;
-  background-color: white;
+}
+
+.camera-button:hover{
+		transform: scale(1.05);
+    transition: ease-in-out;
 }
 
 .close:hover {

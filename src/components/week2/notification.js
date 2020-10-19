@@ -53,8 +53,6 @@ const Close = styled.a`
 `;
 
 
-
-
 const Notification = () => {
 
     const [visible, setVisible] = useState(true);
