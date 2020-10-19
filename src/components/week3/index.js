@@ -57,7 +57,7 @@ const Button = (props) => {
 function Week3() {
     return (
         <OuterWrapper>
-            <a href="./">
+            <a href="/">
                 <img src={goback} className="go-back" alt="go back"></img>
             </a>
             <StyledWrapper>
