@@ -1,13 +1,168 @@
-.blob{
-  z-index: 1;
-  width: 75%;
-  display: flex;
-  position: absolute;
-  top:230px;
+.flip-container {
+	perspective: 1000px;
 }
 
-.splash-img{
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 410px;
+  height: 382px;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+  left: 0;
+}
+
+.front {
+	z-index: 2;
+  transform: rotateY(0deg);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.blob {
+  z-index: -1;
+  width: 125%;
+  display: flex;
+  position: absolute;
+  right: -33px;
+  bottom: -68px;
+}
+
+.splash-img {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+
+.week-display {
+  width: 100%;
+  height: 100%;
+}
+
+
+.flex-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.flex-item {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 30%;
+  -ms-flex: 0 1 30%;
+  flex: 0 1 30%;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  margin: 0 10px;
+}
+
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  line-height: 200%;
+}
+
+li a:hover{
+  color: #4f49bd;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+
+a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+.go-back{
+  display: flex;
+  justify-content: start;
+   width: 64px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   margin: 10px 10px;
+}
+
+.go-back:hover{
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+
+.intersection::after {
+  content: "";
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    border-radius: 12px;
+    bottom: 5%;
+    left: calc(50% - 50px);
+    position: absolute;
+
+}
+
+.flashlight-button:hover{
+  transform: scale(1.05);
+  transition: ease-in-out;
+}
+
+.camera-button:hover{
+		transform: scale(1.05);
+    transition: ease-in-out;
+}
+
+.close:hover {
+  cursor: pointer;
 }
