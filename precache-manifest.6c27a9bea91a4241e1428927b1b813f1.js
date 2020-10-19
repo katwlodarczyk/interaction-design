@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8d5d088d42a58b0611986cebfe44a657",
+    "revision": "76a21b8d7b867a73c5438fb9d8c922a1",
     "url": "/interaction-design/index.html"
   },
   {
-    "revision": "02f73d4b19a58e6b6a19",
-    "url": "/interaction-design/static/css/main.ab32d93d.chunk.css"
+    "revision": "df0d3d699fc89ba93fb3",
+    "url": "/interaction-design/static/css/main.46fafd53.chunk.css"
   },
   {
-    "revision": "347d324b7874118af427",
-    "url": "/interaction-design/static/js/2.5b2db670.chunk.js"
+    "revision": "ff1341a167fc6739e483",
+    "url": "/interaction-design/static/js/2.d677ceb3.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/interaction-design/static/js/2.5b2db670.chunk.js.LICENSE.txt"
+    "url": "/interaction-design/static/js/2.d677ceb3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "02f73d4b19a58e6b6a19",
-    "url": "/interaction-design/static/js/main.33914baa.chunk.js"
+    "revision": "df0d3d699fc89ba93fb3",
+    "url": "/interaction-design/static/js/main.b1a5c6b4.chunk.js"
   },
   {
     "revision": "2810460e4a2244f3cbbe",
     "url": "/interaction-design/static/js/runtime-main.ec7e679c.js"
+  },
+  {
+    "revision": "62513d6ec085a532b9053e9a0b0b5b4b",
+    "url": "/interaction-design/static/media/add.62513d6e.svg"
   },
   {
     "revision": "bbb063b5dfdf81d7fc8c724f2862c79c",
@@ -46,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "60770a8c3089b47fd1727561872ff4c2",
     "url": "/interaction-design/static/media/notification-logo.60770a8c.svg"
+  },
+  {
+    "revision": "bc02c5b73a86d7182e0670cde06fb235",
+    "url": "/interaction-design/static/media/send.bc02c5b7.svg"
   },
   {
     "revision": "d8e648cf33aecf04bebfca17b914bc35",
