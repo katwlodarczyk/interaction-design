@@ -15,13 +15,17 @@ const OuterWrapper = styled.div`
   text-align: center;
 `;
 
+const Heading = styled.h1`
+  padding-bottom:20px;
+`;
+
 const li = styled.li`
   color: #000;
 `;
 
 const Home = () => (
   <div>
-    <h1>Interaction Design</h1>
+    <Heading>Interaction Design</Heading>
     <nav>
       <ul className="flex-container">
         <li className="flex-item">
