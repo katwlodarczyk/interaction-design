@@ -1,24 +1,30 @@
 {
   "files": {
-    "main.css": "/interaction-design/static/css/main.8d024910.chunk.css",
-    "main.js": "/interaction-design/static/js/main.73d44161.chunk.js",
-    "main.js.map": "/interaction-design/static/js/main.73d44161.chunk.js.map",
+    "main.css": "/interaction-design/static/css/main.ab32d93d.chunk.css",
+    "main.js": "/interaction-design/static/js/main.2a85cdba.chunk.js",
+    "main.js.map": "/interaction-design/static/js/main.2a85cdba.chunk.js.map",
     "runtime-main.js": "/interaction-design/static/js/runtime-main.ec7e679c.js",
     "runtime-main.js.map": "/interaction-design/static/js/runtime-main.ec7e679c.js.map",
-    "static/js/2.4555a7b9.chunk.js": "/interaction-design/static/js/2.4555a7b9.chunk.js",
-    "static/js/2.4555a7b9.chunk.js.map": "/interaction-design/static/js/2.4555a7b9.chunk.js.map",
+    "static/js/2.5b2db670.chunk.js": "/interaction-design/static/js/2.5b2db670.chunk.js",
+    "static/js/2.5b2db670.chunk.js.map": "/interaction-design/static/js/2.5b2db670.chunk.js.map",
     "index.html": "/interaction-design/index.html",
-    "precache-manifest.1172ee12c6ca0b21f6be4c4f1ad63a52.js": "/interaction-design/precache-manifest.1172ee12c6ca0b21f6be4c4f1ad63a52.js",
+    "precache-manifest.e71f9be5a03b261bf209c4c1ba3d8491.js": "/interaction-design/precache-manifest.e71f9be5a03b261bf209c4c1ba3d8491.js",
     "service-worker.js": "/interaction-design/service-worker.js",
-    "static/css/main.8d024910.chunk.css.map": "/interaction-design/static/css/main.8d024910.chunk.css.map",
-    "static/js/2.4555a7b9.chunk.js.LICENSE.txt": "/interaction-design/static/js/2.4555a7b9.chunk.js.LICENSE.txt",
+    "static/css/main.ab32d93d.chunk.css.map": "/interaction-design/static/css/main.ab32d93d.chunk.css.map",
+    "static/js/2.5b2db670.chunk.js.LICENSE.txt": "/interaction-design/static/js/2.5b2db670.chunk.js.LICENSE.txt",
+    "static/media/back-icon.svg": "/interaction-design/static/media/back-icon.bbb063b5.svg",
+    "static/media/camera-icon.svg": "/interaction-design/static/media/camera-icon.d9b2d388.svg",
+    "static/media/close-icon.svg": "/interaction-design/static/media/close-icon.361ac511.svg",
+    "static/media/flashlight-icon.svg": "/interaction-design/static/media/flashlight-icon.b3d60fda.svg",
+    "static/media/iphone-x.png": "/interaction-design/static/media/iphone-x.869817ce.png",
+    "static/media/notification-logo.svg": "/interaction-design/static/media/notification-logo.60770a8c.svg",
     "static/media/shopping-cart-gif.gif": "/interaction-design/static/media/shopping-cart-gif.d8e648cf.gif",
-    "static/media/week1-display.jpg": "/interaction-design/static/media/week1-display.daf1171b.jpg"
+    "static/media/wallpaper.jpg": "/interaction-design/static/media/wallpaper.4ca7a774.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ec7e679c.js",
-    "static/js/2.4555a7b9.chunk.js",
-    "static/css/main.8d024910.chunk.css",
-    "static/js/main.73d44161.chunk.js"
+    "static/js/2.5b2db670.chunk.js",
+    "static/css/main.ab32d93d.chunk.css",
+    "static/js/main.2a85cdba.chunk.js"
   ]
 }
