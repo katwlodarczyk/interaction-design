@@ -25,58 +25,60 @@ const li = styled.li`
 `;
 
 const Home = () => (
-  <div>
-    <Heading>Interaction Design</Heading>
-    <nav>
-      <ul className="flex-container">
-        <li className="flex-item">
-          <Link to="/week-1">
-          <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
-	          <div className="flipper">
-		          <div className="front">
-              <h1>Week 1:</h1>
-                 <p>Splash Screen</p>
-              </div>
-              <div className="back">
-                 <img src="./assets/week1-display.jpg" className="week-display" alt="week1"/>
-              </div>
-            </div>
-          </div>
-          </Link>
-        </li>
-        <li className="flex-item">
-          <Link to="/week-2">
-          <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
-	          <div className="flipper">
-		          <div className="front">
-              <h1> Week 2:</h1>
-                <p>Notification</p>
-              </div>
-              <div className="back">
-                <img src="./assets/week2-display.jpg" className="week-display" alt="week2"/>
+  <OuterWrapper>
+    <div>
+      <Heading>Interaction Design</Heading>
+      <nav>
+        <ul className="flex-container">
+          <li className="flex-item">
+            <Link to="/week-1">
+            <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div className="flipper">
+                <div className="front">
+                <h1>Week 1:</h1>
+                  <p>Splash Screen</p>
+                </div>
+                <div className="back">
+                  <img src="./assets/week1-display.jpg" className="week-display" alt="week1"/>
+                </div>
               </div>
             </div>
-          </div>
-          </Link>
-        </li>
-        <li className="flex-item">
-          <Link to="/week-3">
-          <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
-	          <div className="flipper">
-		          <div className="front">
-              <h1> Week 3:</h1>
-                <p>Button</p>
-              </div>
-              <div className="back">
-                <img src="./assets/week3-display.jpg" className="week-display" alt="week3"/>
+            </Link>
+          </li>
+          <li className="flex-item">
+            <Link to="/week-2">
+            <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div className="flipper">
+                <div className="front">
+                <h1> Week 2:</h1>
+                  <p>Notification</p>
+                </div>
+                <div className="back">
+                  <img src="./assets/week2-display.jpg" className="week-display" alt="week2"/>
+                </div>
               </div>
             </div>
-          </div>
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  </div>
+            </Link>
+          </li>
+          <li className="flex-item">
+            <Link to="/week-3">
+            <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div className="flipper">
+                <div className="front">
+                <h1> Week 3:</h1>
+                  <p>Button</p>
+                </div>
+                <div className="back">
+                  <img src="./assets/week3-display.jpg" className="week-display" alt="week3"/>
+                </div>
+              </div>
+            </div>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </OuterWrapper>
 )
 
 function App() {

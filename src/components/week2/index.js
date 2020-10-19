@@ -21,7 +21,6 @@ const StyledWrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     height: 50vh;
-    width: 30vh;
     margin:0 auto;
     z-index: 10000;
 `;
