@@ -33,7 +33,7 @@ const Home = () => (
                  <p>Splash Screen</p>
               </div>
               <div className="back">
-                 <img src="/assets/week1-display.jpg" className="week-display" alt="week1"/>
+                 <img src="./assets/week1-display.jpg" className="week-display" alt="week1"/>
               </div>
             </div>
           </div>
