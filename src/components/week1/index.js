@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import shoppingCart from "./../../assets/shopping-cart-gif.gif";
 import blob from './../../assets/blob.png';
 import goback from './../../assets/back-icon.svg';
@@ -91,10 +91,10 @@ function Week1() {
 return (
     <OuterWrapper>
         <a href="./">
-            <img src={goback} className="go-back"></img>
+            <img src={goback} className="go-back" alt="go back"></img>
         </a>
         <Container>
-            <StyledIphone src={iphone} className="iphone"></StyledIphone>
+            <StyledIphone src={iphone} className="iphone" alt=""></StyledIphone>
             <StyledWrapper>
                 <Intersection>
                     <div className="img-wrapper">

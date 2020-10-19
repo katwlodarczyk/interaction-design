@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-import ReactDOM from 'react-dom';
+import React from "react";
 import styled from 'styled-components';
 import goback from './../../assets/back-icon.svg';
 import iphone from './../../assets/iphone-x.png';
@@ -25,24 +24,6 @@ const StyledWrapper = styled.div`
     width: 30vh;
     margin:0 auto;
     z-index: 10000;
-`;
-
-const StyledHeader = styled.h1`
-    text-align: center;
-    color: #000000;
-    font-size: 20px;
-    z-index: 10000;
-    font-family: 'Montserrat', sans-serif;
-    padding-top:100px
-`;
-
-const StyledParagraph = styled.p`
-    text-align: center;
-    color: #000000;
-    font-size: 16px;
-    margin-top: -10px;
-    z-index: 10000;
-    font-family: 'Montserrat', sans-serif;
 `;
 
 const StyledDiv = styled.div`
@@ -97,11 +78,10 @@ const DateDiv = styled.div`
 
 const FunctionButtonsSection = styled.div`
    display: flex;
-   align-content: end;
+   align-content: flex-end;
    flex-direction: row;
    justify-content: space-around;
    margin: 0 20px;
-   padding-top: 324px;
 `;
 
 const CameraButton = styled.a`
@@ -130,49 +110,11 @@ const Flashlight = styled.img`
     opacity:1;
 `;
 
-// function Clock(props) {
-
-//     return (
-//       <div>
-//          {props.date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
-//       </div>
-//     );
-//   }
-  
-//   function tick() {
-//     ReactDOM.render(
-//       <Clock date={new Date()} />,
-//       document.getElementById('time')
-//     );
-//   }
-  
-//   setInterval(tick, 1000);
-  
-//   function Date(props) {
-
-//     return (
-//       <div>
-//          {props.date.toLocaleDateString()}
-//       </div>
-//     );
-//   }
-  
-//   function date() {
-//     ReactDOM.render(
-//       <Date date={new Date()} />,
-//       document.getElementById('date')
-//     );
-//   }
-  
-//   setInterval(tick, 1000);
-  
-
-
 function Week2() {
     return (
         <OuterWrapper>
             <a href="./">
-                <img src={goback} className="go-back"></img>
+                <img src={goback} className="go-back" alt="go back"></img>
             </a>
             <StyledWrapper>
                 <StyledDiv>   
@@ -181,12 +123,13 @@ function Week2() {
                     <Intersection className="intersection">
                        <ClockDiv id="time">12:54</ClockDiv>
                        <DateDiv id="date">Friday 16 October</DateDiv>
+                       <Notification />
                        <FunctionButtonsSection>
                             <FlashlightButton href="/#" className="flashlight-button">
-                                <Flashlight src={flashlight}></Flashlight>
+                                <Flashlight src={flashlight} alt="flashlight"></Flashlight>
                             </FlashlightButton>
                             <CameraButton href="/#" className="camera-button">
-                                <Camera src={camera}></Camera>
+                                <Camera src={camera} alt="camera"></Camera>
                             </CameraButton>
                        </FunctionButtonsSection>
                     </Intersection>

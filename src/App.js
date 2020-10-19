@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Week1 from './components/week1';
 import Week2 from './components/week2';
 import styled from 'styled-components';
 import css from './App.css';
-import Week1Display from './assets/week1-display.jpg';
-import Week2Display from './assets/week2-display.jpg';
 
 const OuterWrapper = styled.div`
   margin: 0 auto;
@@ -35,7 +33,7 @@ const Home = () => (
                  <p>Splash Screen</p>
               </div>
               <div className="back">
-                 <img src="/assets/week1-display.jpg" className="week-display"/>
+                 <img src="/assets/week1-display.jpg" className="week-display" alt="week1"/>
               </div>
             </div>
           </div>
@@ -50,7 +48,7 @@ const Home = () => (
                 <p>Notification</p>
               </div>
               <div className="back">
-                <img src="./assets/week2-display.jpg" className="week-display"/>
+                <img src="./assets/week2-display.jpg" className="week-display" alt="week2"/>
               </div>
             </div>
           </div>
