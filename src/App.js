@@ -86,16 +86,16 @@ function App() {
     <OuterWrapper>
       <Router>
         <Switch>
-          <Route path="/week-1">
+          <Route path="#/week-1">
             <Week1 />
           </Route>
-          <Route path="/week-2">
+          <Route path="#/week-2">
             <Week2 />
           </Route>
-          <Route path="/week-3">
+          <Route path="#/week-3">
             <Week3 />
           </Route>
-          <Route path="/">
+          <Route path="#/">
             <Home />
           </Route>
         </Switch>
