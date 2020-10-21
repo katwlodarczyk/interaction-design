@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/interaction-design/static/css/main.46fafd53.chunk.css",
-    "main.js": "/interaction-design/static/js/main.39031550.chunk.js",
-    "main.js.map": "/interaction-design/static/js/main.39031550.chunk.js.map",
+    "main.js": "/interaction-design/static/js/main.df7f9ae4.chunk.js",
+    "main.js.map": "/interaction-design/static/js/main.df7f9ae4.chunk.js.map",
     "runtime-main.js": "/interaction-design/static/js/runtime-main.ec7e679c.js",
     "runtime-main.js.map": "/interaction-design/static/js/runtime-main.ec7e679c.js.map",
     "static/js/2.d677ceb3.chunk.js": "/interaction-design/static/js/2.d677ceb3.chunk.js",
     "static/js/2.d677ceb3.chunk.js.map": "/interaction-design/static/js/2.d677ceb3.chunk.js.map",
     "index.html": "/interaction-design/index.html",
-    "precache-manifest.048e23334d5742786b7d748bedd6f6ae.js": "/interaction-design/precache-manifest.048e23334d5742786b7d748bedd6f6ae.js",
+    "precache-manifest.beb77a89cef5ef445f37e5fe6c2c2f2d.js": "/interaction-design/precache-manifest.beb77a89cef5ef445f37e5fe6c2c2f2d.js",
     "service-worker.js": "/interaction-design/service-worker.js",
     "static/css/main.46fafd53.chunk.css.map": "/interaction-design/static/css/main.46fafd53.chunk.css.map",
     "static/js/2.d677ceb3.chunk.js.LICENSE.txt": "/interaction-design/static/js/2.d677ceb3.chunk.js.LICENSE.txt",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.ec7e679c.js",
     "static/js/2.d677ceb3.chunk.js",
     "static/css/main.46fafd53.chunk.css",
-    "static/js/main.39031550.chunk.js"
+    "static/js/main.df7f9ae4.chunk.js"
   ]
 }
