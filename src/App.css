@@ -168,6 +168,16 @@ a:active {
   cursor: pointer;
 }
 
-.button-disabled{
-  cursor: not-allowed;
+.button:hover {
+  background-color: #80bfda;
+}
+
+.button:focus {
+  background-color: #80bfda;
+  outline: white;
+}
+
+.button:active {
+  background-color: #80bfda;
+  outline: none;
 }

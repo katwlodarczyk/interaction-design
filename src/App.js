@@ -31,7 +31,7 @@ const Home = () => (
       <nav>
         <ul className="flex-container">
           <li className="flex-item">
-            <Link to="/week-1">
+            <Link to="/interaction-design/week-1">
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
@@ -46,7 +46,7 @@ const Home = () => (
             </Link>
           </li>
           <li className="flex-item">
-            <Link to="/week-2">
+            <Link to="/interaction-design/week-2">
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
@@ -61,7 +61,7 @@ const Home = () => (
             </Link>
           </li>
           <li className="flex-item">
-            <Link to="/week-3">
+            <Link to="/interaction-design/week-3">
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
@@ -86,16 +86,16 @@ function App() {
     <OuterWrapper>
       <Router>
         <Switch>
-          <Route path="#/week-1">
+          <Route path="/interaction-design/week-1">
             <Week1 />
           </Route>
-          <Route path="#/week-2">
+          <Route path="/interaction-design/week-2">
             <Week2 />
           </Route>
-          <Route path="#/week-3">
+          <Route path="/interaction-design/week-3">
             <Week3 />
           </Route>
-          <Route path="#/">
+          <Route path="/interaction-design/">
             <Home />
           </Route>
         </Switch>

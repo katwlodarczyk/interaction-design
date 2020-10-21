@@ -35,12 +35,12 @@ const StyledButton = styled.button`
     font-size: 24px;
     border: 0;
     border-radius: 8px;
-    box-shadow: 0 0 0.7rem rgba(0,0,0,0.5);
+    box-shadow: ${(props) => (props.disabled ? "0 0 0 0 0" : "0 0 0.5rem rgba(0,0,0,0.6)")};
     margin: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    cursor: pointer;
+    cursor: ${(props) => (props.disabled ? 'not-allowed' : 'pointer')};
 `;
 
 const Icon = styled.img`
@@ -49,24 +49,29 @@ const Icon = styled.img`
 
 const Button = (props) => {
 
-    const {children, color} = props;
+    const {children, color, disabled, ...other} = props;
 
-    return <StyledButton color={color}> {children} </StyledButton>
+    return <StyledButton color={(disabled ? "#cfcfcf" : color)} disabled={disabled} {...other}> {children} </StyledButton>
 };
 
 function Week3() {
+    // const handleMouseOver  = (e) => {
+    //     e.target.style.background = 'red';
+    // } 
+     
+
     return (
         <OuterWrapper>
-            <a href="#/">
+            <a href="/interaction-design/">
                 <img src={goback} className="go-back" alt="go back"></img>
             </a>
             <StyledWrapper>
                 <StyledDiv>  
-                        <Button color="#6200ee">PRIMARY</Button>
-                        <Button color="#1200ee">SECONDARY</Button>
-                        <Button color="#1280ee"><Icon src={send}></Icon><span> WITH ICON</span></Button>
-                        <Button color="#1280ee"><img src={add}></img></Button>
-                        <Button color="#a3b7ca" className="button-disabled">DISABLED</Button>
+                        <Button className="button" color="#6200ee">PRIMARY</Button>
+                        <Button className="button" color="#1200ee">SECONDARY</Button>
+                        <Button className="button" color="#1280ee"><Icon src={send}></Icon><span> WITH ICON</span></Button>
+                        <Button className="button" color="#1280ee"><img src={add}></img></Button>
+                        <Button color="#a3b7ca" disabled={true}>DISABLED</Button>
                 </StyledDiv>
             </StyledWrapper>
         </OuterWrapper>

@@ -90,7 +90,7 @@ function Week1() {
 
 return (
     <OuterWrapper>
-        <a href="#/">
+        <a href="/interaction-design/">
             <img src={goback} className="go-back" alt="go back"></img>
         </a>
         <Container>
