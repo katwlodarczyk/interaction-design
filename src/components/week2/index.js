@@ -121,7 +121,7 @@ const Flashlight = styled.img`
 function Week2() {
     return (
         <OuterWrapper>
-            <a href="/">
+           <a href="#/">
                 <img src={goback} className="go-back" alt="go back"></img>
             </a>
             <StyledWrapper>
