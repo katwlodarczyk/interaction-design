@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/interaction-design/static/css/main.46fafd53.chunk.css",
-    "main.js": "/interaction-design/static/js/main.df7f9ae4.chunk.js",
-    "main.js.map": "/interaction-design/static/js/main.df7f9ae4.chunk.js.map",
+    "main.css": "/interaction-design/static/css/main.2aa8e4c6.chunk.css",
+    "main.js": "/interaction-design/static/js/main.cea907c1.chunk.js",
+    "main.js.map": "/interaction-design/static/js/main.cea907c1.chunk.js.map",
     "runtime-main.js": "/interaction-design/static/js/runtime-main.ec7e679c.js",
     "runtime-main.js.map": "/interaction-design/static/js/runtime-main.ec7e679c.js.map",
-    "static/js/2.d677ceb3.chunk.js": "/interaction-design/static/js/2.d677ceb3.chunk.js",
-    "static/js/2.d677ceb3.chunk.js.map": "/interaction-design/static/js/2.d677ceb3.chunk.js.map",
+    "static/js/2.d58ab9ef.chunk.js": "/interaction-design/static/js/2.d58ab9ef.chunk.js",
+    "static/js/2.d58ab9ef.chunk.js.map": "/interaction-design/static/js/2.d58ab9ef.chunk.js.map",
     "index.html": "/interaction-design/index.html",
-    "precache-manifest.beb77a89cef5ef445f37e5fe6c2c2f2d.js": "/interaction-design/precache-manifest.beb77a89cef5ef445f37e5fe6c2c2f2d.js",
+    "precache-manifest.df4a2bf6b1a58a095eaae67e5a838e95.js": "/interaction-design/precache-manifest.df4a2bf6b1a58a095eaae67e5a838e95.js",
     "service-worker.js": "/interaction-design/service-worker.js",
-    "static/css/main.46fafd53.chunk.css.map": "/interaction-design/static/css/main.46fafd53.chunk.css.map",
-    "static/js/2.d677ceb3.chunk.js.LICENSE.txt": "/interaction-design/static/js/2.d677ceb3.chunk.js.LICENSE.txt",
+    "static/css/main.2aa8e4c6.chunk.css.map": "/interaction-design/static/css/main.2aa8e4c6.chunk.css.map",
+    "static/js/2.d58ab9ef.chunk.js.LICENSE.txt": "/interaction-design/static/js/2.d58ab9ef.chunk.js.LICENSE.txt",
     "static/media/add.svg": "/interaction-design/static/media/add.62513d6e.svg",
     "static/media/back-icon.svg": "/interaction-design/static/media/back-icon.bbb063b5.svg",
     "static/media/camera-icon.svg": "/interaction-design/static/media/camera-icon.d9b2d388.svg",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.ec7e679c.js",
-    "static/js/2.d677ceb3.chunk.js",
-    "static/css/main.46fafd53.chunk.css",
-    "static/js/main.df7f9ae4.chunk.js"
+    "static/js/2.d58ab9ef.chunk.js",
+    "static/css/main.2aa8e4c6.chunk.css",
+    "static/js/main.cea907c1.chunk.js"
   ]
 }
