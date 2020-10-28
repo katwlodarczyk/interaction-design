@@ -21,7 +21,6 @@ const StyledWrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     height: 50vh;
-    width: 30vh;
     margin:0 auto;
     z-index: 10000;
 `;
@@ -122,7 +121,7 @@ const Flashlight = styled.img`
 function Week2() {
     return (
         <OuterWrapper>
-            <a href="./">
+           <a href="/interaction-design/">
                 <img src={goback} className="go-back" alt="go back"></img>
             </a>
             <StyledWrapper>
