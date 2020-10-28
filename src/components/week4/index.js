@@ -7,6 +7,7 @@ import hideIcon from './../../assets/hide-icon.svg';
 import facebookIcon from './../../assets/facebook-icon.svg';
 import googleIcon from './../../assets/google-icon.svg';
 import appleIcon from './../../assets/apple-icon.svg';
+import statusBar from './../../assets/status-bar.svg';
 import loginImage from './../../assets/login-image.png';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -78,6 +79,11 @@ const StyledIphone = styled.img`
     right: 0;
     z-index: 0;
 `;
+
+const StatusBar = styled.img`
+   width: 80%;
+   padding-top: 23px;
+`;
  
 const StyledHeader = styled.h1`
   color: #B8A7FE;
@@ -88,16 +94,30 @@ const StyledHeader = styled.h1`
   display: flex;
   align-self: center;
   justify-content: center;
+  margin-bottom:0;
 `;
 
+const StyledLink = styled.a`
+   font-size: 12px;
+   align-content: center;
+   justify-content: center;
+   display:flex;
+   color: #8f8f8f;
+   &:hover{
+       text-decoration: underline;
+       color: #896EFD;
+   }
+`;
+
+
 const StyledImage = styled.img`
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: center;
   align-self: center;
 `;
 
-const StyledInputGroup = styled.p`
+const StyledInputGroup = styled.div`
   margin: 5px auto;
 `;
 
@@ -108,6 +128,7 @@ const StyledLabel = styled.p`
   padding-left: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
+  color: #333333;
 `;
 
 const StyledInput = styled.input`
@@ -150,6 +171,17 @@ const StyledErrorText = styled.p`
     height: 15px;
 `;
 
+const StyledForgotLink = styled.a`
+   font-size: 10px;
+   align-content: start;
+   display:flex;
+   padding-left: 40px;
+   &:hover{
+       text-decoration: underline;
+       color: #896EFD;
+   }
+`;
+
 const StyledButton = styled.button`
   height: 46px;
   width: 200px;
@@ -161,6 +193,7 @@ const StyledButton = styled.button`
   border: 0;
   cursor: pointer;
   margin-top: 10px;
+  outline-color: #896EFD; 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   &:hover {
     background: #B8A7FE;
@@ -190,9 +223,12 @@ function Week4() {
             <StyledWrapper>
                 <StyledDiv>  
                     <StyledIphone src={iphone} className="iphone"></StyledIphone>
-                    <Background></Background>
+                    <Background>
+                        <StatusBar src={statusBar} alt="status-bar"></StatusBar>
+                    </Background>
                     <Intersection className="intersection">
                         <StyledHeader>Sign in to your account</StyledHeader>
+                        <StyledLink href="#">or create new</StyledLink>
                         <StyledImage src={loginImage} alt=""></StyledImage>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <StyledInputGroup>
@@ -220,6 +256,7 @@ function Week4() {
                                 placeholder="hello_world123"
                                 ref={register()}
                             />
+                            <StyledForgotLink href="#" target="_blank">Forgot your password?</StyledForgotLink>
                             <StyledErrorText> {errors.password?.message}</StyledErrorText>
                         </StyledInputGroup>
                         <StyledInputGroup>
@@ -233,6 +270,5 @@ function Week4() {
         </OuterWrapper>
 );
 }
-
 
 export default Week4;
