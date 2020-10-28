@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Week1 from './components/week1';
 import Week2 from './components/week2';
 import Week3 from './components/week3';
+import Week4 from './components/week4';
 import styled from 'styled-components';
 import css from './App.css';
 
@@ -75,6 +76,21 @@ const Home = () => (
             </div>
             </Link>
           </li>
+          <li className="flex-item">
+            <Link to="/interaction-design/week-4">
+            <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div className="flipper">
+                <div className="front">
+                <h1> Week 4:</h1>
+                  <p>Login screen</p>
+                </div>
+                <div className="back">
+                  <img src="./assets/week4-display.jpg" className="week-display" alt="week4"/>
+                </div>
+              </div>
+            </div>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
@@ -94,6 +110,9 @@ function App() {
           </Route>
           <Route path="/interaction-design/week-3">
             <Week3 />
+          </Route>
+          <Route path="/interaction-design/week-4">
+            <Week4 />
           </Route>
           <Route path="/interaction-design/">
             <Home />
