@@ -9,12 +9,13 @@ import css from './App.css';
 
 const OuterWrapper = styled.div`
   margin: 0 auto;
-  height:100vh;
+  height:100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #e4ecf8;
   text-align: center;
+  
 `;
 
 const Heading = styled.h1`
