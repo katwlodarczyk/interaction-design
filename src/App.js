@@ -15,7 +15,6 @@ const OuterWrapper = styled.div`
   align-items: center;
   background: #e4ecf8;
   text-align: center;
-  
 `;
 
 const Heading = styled.h1`
