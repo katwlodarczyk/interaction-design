@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b3dfe38711b1799b337e14040d83cae4",
+    "revision": "be3420fdfb43c765be30c5dae8285c87",
     "url": "/interaction-design/index.html"
   },
   {
-    "revision": "0c0463e85f6e073b6502",
+    "revision": "85fb888f7bebf2f81e0c",
     "url": "/interaction-design/static/css/main.7474ac58.chunk.css"
   },
   {
-    "revision": "0a85d13c441f40667926",
-    "url": "/interaction-design/static/js/2.662a4281.chunk.js"
+    "revision": "dc1eb9dfc4cbcc5c007b",
+    "url": "/interaction-design/static/js/2.44491215.chunk.js"
   },
   {
     "revision": "8f5425c5c2032ef521d48b72696053de",
-    "url": "/interaction-design/static/js/2.662a4281.chunk.js.LICENSE.txt"
+    "url": "/interaction-design/static/js/2.44491215.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0c0463e85f6e073b6502",
-    "url": "/interaction-design/static/js/main.fa85c249.chunk.js"
+    "revision": "85fb888f7bebf2f81e0c",
+    "url": "/interaction-design/static/js/main.449f4363.chunk.js"
   },
   {
     "revision": "2810460e4a2244f3cbbe",
@@ -56,6 +56,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/interaction-design/static/media/google-icon.cbf460d0.svg"
   },
   {
+    "revision": "4ebeb187162d3cda9ca43bd66ae27802",
+    "url": "/interaction-design/static/media/hamburger-menu.4ebeb187.svg"
+  },
+  {
     "revision": "0dffb51f51eabe4377378571b3d8d062",
     "url": "/interaction-design/static/media/hide-icon.0dffb51f.svg"
   },
@@ -66,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "60770a8c3089b47fd1727561872ff4c2",
     "url": "/interaction-design/static/media/notification-logo.60770a8c.svg"
+  },
+  {
+    "revision": "44d5ca55bf33fbd9b59e44e0404deb7b",
+    "url": "/interaction-design/static/media/picture-group.44d5ca55.png"
   },
   {
     "revision": "bc02c5b73a86d7182e0670cde06fb235",
@@ -82,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f828787fa9c27dbba84c205c6353d906",
     "url": "/interaction-design/static/media/status-bar.f828787f.svg"
+  },
+  {
+    "revision": "ffe1c11c94d3ed76e86fc4c43547f83a",
+    "url": "/interaction-design/static/media/user-avatar.ffe1c11c.png"
   },
   {
     "revision": "4ca7a774a33fda84bc8c64f2f2d5ac1e",
