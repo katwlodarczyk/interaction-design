@@ -145,14 +145,14 @@ a:active {
 
 .intersection::after {
   content: "";
-    width: 100px;
-    height: 4px;
-    background-color: white;
-    border-radius: 12px;
-    bottom: 5%;
-    left: calc(50% - 50px);
-    position: absolute;
-
+  width: 100px;
+  height: 4px;
+  background-color: white;
+  border-radius: 12px;
+  bottom: 5%;
+  left: calc(50% - 50px);
+  position: absolute;
+  z-index: 10;
 }
 
 .flashlight-button:hover{

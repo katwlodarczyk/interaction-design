@@ -47,7 +47,7 @@ const Icon = styled.img`
     margin-right: 8px;
 `;
 
-const Button = (props) => {
+export const Button = (props) => {
 
     const {children, color, disabled, ...other} = props;
 
@@ -55,11 +55,7 @@ const Button = (props) => {
 };
 
 function Week3() {
-    // const handleMouseOver  = (e) => {
-    //     e.target.style.background = 'red';
-    // } 
-     
-
+ 
     return (
         <OuterWrapper>
             <a href="/interaction-design/">

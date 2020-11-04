@@ -101,7 +101,7 @@ const Home = () => (
                   <p>Mobile Navigation</p>
                 </div>
                 <div className="back">
-                  <img src="./assets/week4-display.jpg" className="week-display" alt="week4"/>
+                  <img src="./assets/week5-display.jpg" className="week-display" alt="week5"/>
                 </div>
               </div>
             </div>

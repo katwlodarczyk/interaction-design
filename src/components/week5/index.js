@@ -10,14 +10,56 @@ import userAvatar from './../../assets/user-avatar.png';
 import statsGroup from './../../assets/stats-group.png';
 import pictureGroup from './../../assets/picture-group.png';
 import appBottomMenu from './../../assets/app-bottom-menu.png';
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+import { Button } from './../week3';
+import { Swipeable } from 'react-swipeable';
 
-const schema = yup.object().shape({
-    email: yup.string().required("Email is required").email("Not a valid email"),
-    password: yup.string().required("Password is required"),
-  });
+
+const StyledNavWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+`;
+
+const StyledSideNav = styled.div`
+    position: absolute;
+    width: ${(props) => props.open ? '136px' : '0px'};
+    height: 553px;
+    top: -6px;
+    right: -11px;
+    background: white;
+    box-shadow: 2px 4px 4px rgba(0,0,0,0.25);
+    z-index: 1;
+    border-bottom-right-radius: 23px;
+`;
+
+const StyledCloseIcon = styled.img`
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin: 0.75rem 1rem 3rem 1rem;
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: 12px;
+    right: -3px;
+`;
+
+const StyledNav = styled.ul`
+    display: flex;
+    color: #333333;
+    flex-direction: column;
+    padding-left: 0;
+    & li {
+        text-align: right;
+        list-style: none;
+        padding-right: 16px;
+        margin-top: 4rem;
+        cursor: pointer;
+        &:hover {
+            color: grey;
+        }
+    }`;
 
 const OuterWrapper = styled.div`
     width: 100vw;
@@ -69,12 +111,12 @@ const Intersection = styled.div`
     border-radius: 12px;
     bottom: 5%;
     left: calc(50% - 50px);
-    position: absolute;
+   
    }
 `;
 
 const StyledIphone = styled.img`
-    filter: drop-shadow(20px 24px 32px rgba(0, 0, 0, 0.251783));
+    filter: drop-shadow(10px 7px 3px rgba(0, 0, 0, 0.01));
     position: absolute;
     top: 0;
     right: 0;
@@ -113,14 +155,14 @@ const StyledHeaderSection = styled.div`
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   padding: 50px 30px 0 30px;
-  
+   padding: 50px 30px 0 30px;  
 `;
 
 const StyledHamburger = styled.a`
    margin-top: 18.760px;
    justify-content: center;
    align-content: center;
+   cursor: pointer;
    
 `;
 
@@ -145,10 +187,26 @@ const StyledInfo = styled.div`
    padding-left: 20px;
    align-content: start;
    align-items: flex-start;
-   & p{
-        margin-top: 0;
-        margin-bottom: 5px;
+   & h2{
+       font-size: 14px;
+       margin: 0;
+       padding-top:5px;
    }
+   & p{
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 12px;
+   }
+`;
+
+const FollowMeButton = styled.button`
+   background-color: #32BAF3;
+   border: none;
+   padding: 5px 25px;
+   border-radius: 6px;
+   color: #ffffff;
+   filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.25));
+   cursor: pointer;
 `;
 
 const StyledInputGroup = styled.div`
@@ -176,8 +234,28 @@ const StyledBottomMenu = styled.img`
 
 
 function Week5() {
+    const [navOpen, setNavOpen] = useState(false);
 
-    
+    const handleClose = () => {
+
+        setNavOpen(false);
+    }
+    const handleOpen = () => {
+        setNavOpen(true);
+    }
+
+    const handleSwipe = (event) => {
+
+
+        if (event.dir === "Left") {
+            setNavOpen(true);
+        }
+
+        if (event.dir === "Right") {
+            setNavOpen(false);
+        }
+    }
+        
 
     return (
         <OuterWrapper>
@@ -192,16 +270,34 @@ function Week5() {
                     </Background>
                     <Intersection className="intersection">
                         <StyledHeaderSection>
-                            <StyledHeader>Header</StyledHeader>
-                            <StyledHamburger href="#">
-                                <img src={hamburgerMenu}></img>
-                            </StyledHamburger>
+                            <StyledHeader>Explore</StyledHeader>
+                            <Swipeable onSwiped={handleSwipe}>
+                                <StyledNavWrapper>
+                                    <StyledSideNav open={navOpen}>
+                                    
+                                        {
+                                            navOpen &&
+                                            (<StyledNav>
+                                                <StyledCloseIcon onClick={handleClose} src={closeIcon} />
+                                                <li>Settings</li>
+                                                <li>About App</li>
+                                                <li>Privacy Policy</li>
+                                            </StyledNav>)
+                                        }
+                                    </StyledSideNav>
+
+                                    <StyledHamburger onClick={handleOpen}>
+                                        <img src={hamburgerMenu}></img>
+                                    </StyledHamburger>
+                                </StyledNavWrapper>
+                            </Swipeable>
                         </StyledHeaderSection>
                         <StyledTopSection>
                             <StyledAvatar src={userAvatar} alt="user-avatar"></StyledAvatar>
                             <StyledInfo>
-                                <p>userName</p>
-                                <p>bio</p>
+                                <h2>daveDavidson</h2>
+                                <p>photographer</p>
+                                <FollowMeButton>Follow me</FollowMeButton>
                             </StyledInfo>
                         </StyledTopSection>
                         <StyledFeed src={pictureGroup}></StyledFeed>
