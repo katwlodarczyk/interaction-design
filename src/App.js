@@ -4,12 +4,13 @@ import Week1 from './components/week1';
 import Week2 from './components/week2';
 import Week3 from './components/week3';
 import Week4 from './components/week4';
+import Week5 from './components/week5';
 import styled from 'styled-components';
 import css from './App.css';
 
 const OuterWrapper = styled.div`
   margin: 0 auto;
-  height:100vh;
+  height:100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +92,21 @@ const Home = () => (
             </div>
             </Link>
           </li>
+          <li className="flex-item">
+            <Link to="/interaction-design/week-5">
+            <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div className="flipper">
+                <div className="front">
+                <h1> Week 5:</h1>
+                  <p>Mobile Navigation</p>
+                </div>
+                <div className="back">
+                  <img src="./assets/week5-display.jpg" className="week-display" alt="week5"/>
+                </div>
+              </div>
+            </div>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
@@ -113,6 +129,9 @@ function App() {
           </Route>
           <Route path="/interaction-design/week-4">
             <Week4 />
+          </Route>
+          <Route path="/interaction-design/week-5">
+            <Week5 />
           </Route>
           <Route path="/interaction-design/">
             <Home />
