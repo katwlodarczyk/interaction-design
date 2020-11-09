@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/interaction-design/static/css/main.9cfda84a.chunk.css",
-    "main.js": "/interaction-design/static/js/main.dabb4f5e.chunk.js",
-    "main.js.map": "/interaction-design/static/js/main.dabb4f5e.chunk.js.map",
+    "main.js": "/interaction-design/static/js/main.47820ffb.chunk.js",
+    "main.js.map": "/interaction-design/static/js/main.47820ffb.chunk.js.map",
     "runtime-main.js": "/interaction-design/static/js/runtime-main.ec7e679c.js",
     "runtime-main.js.map": "/interaction-design/static/js/runtime-main.ec7e679c.js.map",
-    "static/js/2.02e7f100.chunk.js": "/interaction-design/static/js/2.02e7f100.chunk.js",
-    "static/js/2.02e7f100.chunk.js.map": "/interaction-design/static/js/2.02e7f100.chunk.js.map",
+    "static/js/2.a3fbc458.chunk.js": "/interaction-design/static/js/2.a3fbc458.chunk.js",
+    "static/js/2.a3fbc458.chunk.js.map": "/interaction-design/static/js/2.a3fbc458.chunk.js.map",
     "index.html": "/interaction-design/index.html",
-    "precache-manifest.dc716d36f8dc1f5a9948d00935fad8d2.js": "/interaction-design/precache-manifest.dc716d36f8dc1f5a9948d00935fad8d2.js",
+    "precache-manifest.c086cbeeb6a8ba7d282c958ea3084d32.js": "/interaction-design/precache-manifest.c086cbeeb6a8ba7d282c958ea3084d32.js",
     "service-worker.js": "/interaction-design/service-worker.js",
     "static/css/main.9cfda84a.chunk.css.map": "/interaction-design/static/css/main.9cfda84a.chunk.css.map",
-    "static/js/2.02e7f100.chunk.js.LICENSE.txt": "/interaction-design/static/js/2.02e7f100.chunk.js.LICENSE.txt",
+    "static/js/2.a3fbc458.chunk.js.LICENSE.txt": "/interaction-design/static/js/2.a3fbc458.chunk.js.LICENSE.txt",
     "static/media/add.svg": "/interaction-design/static/media/add.62513d6e.svg",
     "static/media/apple-icon.svg": "/interaction-design/static/media/apple-icon.70b5b818.svg",
     "static/media/back-icon.svg": "/interaction-design/static/media/back-icon.bbb063b5.svg",
@@ -29,14 +29,16 @@
     "static/media/send.svg": "/interaction-design/static/media/send.bc02c5b7.svg",
     "static/media/shopping-cart-gif.gif": "/interaction-design/static/media/shopping-cart-gif.d8e648cf.gif",
     "static/media/show-icon.svg": "/interaction-design/static/media/show-icon.812a8bbb.svg",
+    "static/media/spinner.svg": "/interaction-design/static/media/spinner.74591068.svg",
     "static/media/status-bar.svg": "/interaction-design/static/media/status-bar.f828787f.svg",
+    "static/media/traveling.png": "/interaction-design/static/media/traveling.626ec480.png",
     "static/media/user-avatar.png": "/interaction-design/static/media/user-avatar.ffe1c11c.png",
     "static/media/wallpaper.jpg": "/interaction-design/static/media/wallpaper.4ca7a774.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.ec7e679c.js",
-    "static/js/2.02e7f100.chunk.js",
+    "static/js/2.a3fbc458.chunk.js",
     "static/css/main.9cfda84a.chunk.css",
-    "static/js/main.dabb4f5e.chunk.js"
+    "static/js/main.47820ffb.chunk.js"
   ]
 }
