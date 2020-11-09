@@ -117,7 +117,7 @@ const Home = () => (
                   <p>Dropdown menu</p>
                 </div>
                 <div className="back">
-                  <img src="./assets/week5-display.jpg" className="week-display" alt="week6"/>
+                  <img src="./assets/week6-display.jpg" className="week-display" alt="week6"/>
                 </div>
               </div>
             </div>

@@ -6,6 +6,8 @@ import hamburgerMenu from './../../assets/hamburger-menu.svg';
 import closeIcon from './../../assets/close-icon.svg';
 import statusBar from './../../assets/status-bar.svg';
 import arrow from './../../assets/chevron-down.svg';
+import traveling from './../../assets/traveling.png';
+import spinner from './../../assets/spinner.svg';
 import userAvatar from './../../assets/user-avatar.png';
 import statsGroup from './../../assets/stats-group.png';
 import pictureGroup from './../../assets/picture-group.png';
@@ -151,6 +153,17 @@ const StyledLink = styled.a`
    }
 `;
 
+
+const StyledImage = styled.img`
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    top: 120px;
+  `;
+
+
 const StyledHeaderSection = styled.div`
    display: flex;
    flex-direction: row;
@@ -204,7 +217,7 @@ const StyledButton = styled.button`
     border: 0;
     border-radius: 8px;
     box-shadow: 0 0 0.5rem rgba(0,0,0,0.6);
-    margin: 28px 28px 0 28px;
+    margin: 180px 28px 0 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -214,7 +227,50 @@ const StyledButton = styled.button`
         background: #80bfda;
         color: white;
     }
+    & p {
+        margin: 0;
+    }
 `;
+
+const StyledSubmit = styled.button`
+    color: #fff;
+    background-color: #6200ee;
+    padding: 16px 16px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.6);
+    margin: 28px 28px 0 28px;
+    position: absolute;
+    bottom: 55px;
+    left: 0;
+    height: 56px;
+    width: 249px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;    
+    outline: none;
+    &:hover{
+        background: #80bfda;
+        color: white;
+    }
+    & p {
+        padding-right: 8px;
+        padding-top: 4px;
+        margin: 0;
+    }
+`;
+
+const StyledSpinner = styled.img`
+
+`;
+
+const Submitted = styled.div`
+    display: flex;
+`;
+
 
 export const Dropdown = (props) => {
 
@@ -253,6 +309,7 @@ export const Dropdown = (props) => {
 function Week6() {
     const [navOpen, setNavOpen] = useState(false);
     const [ open, setOpen ] = useState(false);
+    const [click, setClick] = useState(false);
 
     const handleClose = () => {
 
@@ -278,6 +335,10 @@ function Week6() {
         setOpen(!open);
     }
 
+    const handleSubmit = () =>{
+        setClick(!click)
+    }
+
     return (
         <OuterWrapper>
             <a href="/interaction-design/">
@@ -291,7 +352,7 @@ function Week6() {
                     </Background>
                     <Intersection className="intersection">
                         <StyledHeaderSection>
-                            <StyledHeader>Settings</StyledHeader>
+                            <StyledHeader>Transport</StyledHeader>
                             <Swipeable onSwiped={handleSwipe}>
                                 <StyledNavWrapper>
                                     <StyledSideNav open={navOpen}>
@@ -313,11 +374,24 @@ function Week6() {
                                 </StyledNavWrapper>
                             </Swipeable>
                         </StyledHeaderSection>
+                        <StyledImage src={traveling}></StyledImage>
                         <StyledButton onClick={handleClick}>
-                            <p>Preffered method of transport</p>
+                            <p>Preferred method of transport</p>
                             <img src={arrow}></img>
-                            </StyledButton>
+                        </StyledButton>
                         <Dropdown open={open} onClick={handleClick}/>
+                        <StyledSubmit onClick={handleSubmit}>
+                            { !click && 
+                                (<p>SUBMIT</p>)
+                            }
+                            {
+                                click &&
+                                (<Submitted>
+                                    <p>SUBMITTED</p>
+                                    <StyledSpinner src={spinner}></StyledSpinner>
+                                </Submitted>)
+                            }
+                        </StyledSubmit>
                        
                     </Intersection>
                 </StyledDiv>
