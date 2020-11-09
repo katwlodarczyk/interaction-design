@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f9af52869ea0750e7be97b77efd61eb9",
+    "revision": "b1ad5524091109fc151edd0f9175fddb",
     "url": "/interaction-design/index.html"
   },
   {
-    "revision": "1d0d575da6ae5cc5240a",
-    "url": "/interaction-design/static/css/main.ddd85bba.chunk.css"
+    "revision": "80f5cfbf591f10f5c6c6",
+    "url": "/interaction-design/static/css/main.9cfda84a.chunk.css"
   },
   {
-    "revision": "bfa9ea49ded97c638776",
-    "url": "/interaction-design/static/js/2.d8161bf3.chunk.js"
+    "revision": "84ad2e9a1dfedfeafdc1",
+    "url": "/interaction-design/static/js/2.02e7f100.chunk.js"
   },
   {
     "revision": "8f5425c5c2032ef521d48b72696053de",
-    "url": "/interaction-design/static/js/2.d8161bf3.chunk.js.LICENSE.txt"
+    "url": "/interaction-design/static/js/2.02e7f100.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1d0d575da6ae5cc5240a",
-    "url": "/interaction-design/static/js/main.cd81aab2.chunk.js"
+    "revision": "80f5cfbf591f10f5c6c6",
+    "url": "/interaction-design/static/js/main.dabb4f5e.chunk.js"
   },
   {
     "revision": "2810460e4a2244f3cbbe",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d9b2d3883aab7743bd0f68c57478dc48",
     "url": "/interaction-design/static/media/camera-icon.d9b2d388.svg"
+  },
+  {
+    "revision": "012c44fc4ee0fd3b772d27980227922c",
+    "url": "/interaction-design/static/media/chevron-down.012c44fc.svg"
   },
   {
     "revision": "361ac511a818a198c559d06b44f591f5",
