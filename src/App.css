@@ -182,3 +182,11 @@ a:active {
   background-color: #80bfda;
   outline: none;
 }
+
+.week6svg{
+  fill: currentColor;
+}
+
+.week6svg:hover{
+  fill: white;
+}
