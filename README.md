@@ -21,3 +21,6 @@
 ## Week 5:
 - Navigation Menu
 - React Swipeable
+
+## Week 6:
+- Menus, dropdowns, select
