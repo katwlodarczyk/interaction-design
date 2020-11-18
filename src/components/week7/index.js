@@ -8,6 +8,7 @@ import facebookIcon from './../../assets/facebook-icon.svg';
 import googleIcon from './../../assets/google-icon.svg';
 import appleIcon from './../../assets/apple-icon.svg';
 import statusBar from './../../assets/status-bar.svg';
+import spinner from './../../assets/spinner.svg';
 import loginImage from './../../assets/login-image.png';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -35,9 +36,6 @@ const StyledWrapper = styled.div`
     height: 60vh;
     margin:0 auto;
     z-index: 10000;
-    @media (max-width:420px) {
-        
-    }
 `;
 
 const StyledDiv = styled.div`
@@ -55,7 +53,6 @@ const StyledDiv = styled.div`
         padding-bottom: 24px;
     }   
 `;
-
 
 const Section = styled.div`
    position: relative;
@@ -232,20 +229,30 @@ const StyledButton = styled.button`
   }
 `;
 
+const StyledSpinner = styled.img`
+
+`;
+
 
 function Week7() {
 
     const [showPassword, setShowPassword] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    const [submit, setSubmit] = useState(false);
+    const [click, setClick] = useState(false);
 
     const { register, handleSubmit, watch, errors } = useForm({
         resolver: yupResolver(schema),
     });
-    const onSubmit = (data) => console.log(data);
+    const onSubmit = (data) =>  setClick(!click);
 
     const handleClick = (e) => {
         setShowPassword(!showPassword);
     };
+
+    // const handleSubmit = () =>{
+    //     setClick(!click)
+    // }
 
     return (
         <OuterWrapper>
@@ -304,7 +311,14 @@ function Week7() {
                                         <StyledErrorText> {errors.password?.message}</StyledErrorText>
                                     </StyledInputGroup>
                                     <StyledInputGroup>
-                                        <StyledButton> SIGN IN </StyledButton>
+                                        <StyledButton onClick={handleSubmit}>
+                                            { !click && 
+                                                (<p>SIGN UP</p>)
+                                            }
+                                            { click &&
+                                            ( <StyledSpinner src={spinner}></StyledSpinner>)
+                                            }
+                                        </StyledButton>
                                     </StyledInputGroup>
                                 </form>
                             </StyledInside>
