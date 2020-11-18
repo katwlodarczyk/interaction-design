@@ -35,6 +35,9 @@ const StyledWrapper = styled.div`
     height: 60vh;
     margin:0 auto;
     z-index: 10000;
+    @media (max-width:420px) {
+        
+    }
 `;
 
 const StyledDiv = styled.div`
@@ -43,6 +46,14 @@ const StyledDiv = styled.div`
    padding: 32px 38px;
    border-radius: 8px;
    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); 
+   @media (max-width: 660px) {
+       margin-top: 60px;
+   }
+   @media (max-width:420px) {
+        margin: 80px 20px 0 20px; 
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }   
 `;
 
 
@@ -50,25 +61,29 @@ const Section = styled.div`
    position: relative;
    display: flex;
    flex-direction: column;
-   width: 100%;
-   height: 100%;
 `;
 
 const StyledInside = styled.div`
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @media (max-width: 660px) {
+        flex-direction: column;
+    }
 `;
  
 const StyledHeader = styled.h1`
-  color: #B8A7FE;
-  position: relative;
-  font-size: 28px;
-  width: 100%;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  margin-bottom:0;
+    color: #B8A7FE;
+    position: relative;
+    font-size: 28px;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-bottom:0;
+    @media (max-width:420px) {
+        font-size: 20px;
+    }  
 `;
 
 const StyledLink = styled.a`
@@ -83,13 +98,17 @@ const StyledLink = styled.a`
    }
 `;
 
-
 const StyledImage = styled.img`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  padding-left: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-left: 24px;
+    @media (max-width: 660px){
+        padding-left: 0;
+        padding-bottom: 18px;
+    }
+  
 `;
 
 const StyledInputGroup = styled.div`
@@ -109,7 +128,7 @@ const StyledInput = styled.input`
   background: #ffffff;
   border: 1px solid #c7c7c7;
   height: 36px;
-  width: 200px;
+  width: 100%;
   padding-left: 10px;
   font-size: 14px;
   border-radius: 6px;
@@ -171,7 +190,6 @@ const StyledTooltip = styled.span`
     z-index: 10;
     opacity: 0;
     cursor: pointer;
-    /* margin-bottom: 1em; */
     padding: 1em;
     background-color: #e4ecf8;
     font-size: 10px;
@@ -239,7 +257,7 @@ function Week7() {
                     <Section>
                             <StyledHeader>Create a new account</StyledHeader>
                             <StyledLink href="#">or sign in</StyledLink>
-                            <StyledInside>
+                            <StyledInside class="styledInside-week7">
                                 <StyledImage src={loginImage} alt=""></StyledImage>
                                 <form onSubmit={handleSubmit(onSubmit)}>
                                     <StyledInputGroup>
