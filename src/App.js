@@ -133,7 +133,7 @@ const Home = () => (
                   <p>Forms & user feedback</p>
                 </div>
                 <div className="back">
-                  <img src="./assets/week6-display.jpg" className="week-display" alt="week7"/>
+                  <img src="./assets/week7-display.jpg" className="week-display" alt="week7"/>
                 </div>
               </div>
             </div>
