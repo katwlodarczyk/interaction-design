@@ -215,6 +215,7 @@ const StyledText = styled.p`
 
 const StyledLink = styled.a`
    color: #8f8f8f;
+   z-index: 100000;
    &:hover{
        color: #896EFD;
    }
@@ -267,10 +268,10 @@ function Week8() {
 
             <Modal show={showModal} onClick={handleClick} onClose={handleCloseModal}>
                 <StyledModalHeader>Rocket Launch by 
-                    <span>
-                        <StyledLink href="https://www.manypixels.co/gallery/?page=1&s=rocket&style=twoColor"> manypixels
-                        </StyledLink>
-                    </span>
+        
+                    <StyledLink target="_blank" href="https://www.manypixels.co/gallery/?page=1&s=rocket&style=twoColor"> manypixels
+                    </StyledLink>
+        
                 </StyledModalHeader>
                 <StyledInside>
                     <StyledDetailImage src={rocket} alt=""></StyledDetailImage>

@@ -11,6 +11,20 @@
   height: 382px;
 }
 
+@media (max-width: 450px){
+  .flip-container, .front, .back {
+    width: 310px;
+    height: 282px;
+  }
+}
+
+@media (max-width: 350px){
+  .flip-container, .front, .back {
+    width: 210px;
+    height: 182px;
+  }
+}
+
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;

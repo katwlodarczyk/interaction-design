@@ -22,7 +22,21 @@ const OuterWrapper = styled.div`
 `;
 
 const Heading = styled.h1`
+ 
+`;
+
+const SubHeading =styled.p`
   padding-bottom:20px;
+  font-size: 18px; 
+`;
+
+const Sublink = styled.a`
+  color: #3f3d56;
+  padding-left: 2px;
+  &:hover{
+    text-decoration: underline;
+
+  }
 `;
 
 const li = styled.li`
@@ -33,6 +47,9 @@ const Home = () => (
   <OuterWrapper>
     <div>
       <Heading>Interaction Design</Heading>
+      <SubHeading>React components by  
+        <Sublink href="https://github.com/katwlodarczyk">Kat Wlodarczyk</Sublink>
+      </SubHeading>
       <nav>
         <ul className="flex-container">
           <li className="flex-item">
@@ -40,7 +57,7 @@ const Home = () => (
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
-                <h1>Week 1:</h1>
+                <h2>Week 1:</h2>
                   <p>Splash Screen</p>
                 </div>
                 <div className="back">
@@ -55,7 +72,7 @@ const Home = () => (
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
-                <h1> Week 2:</h1>
+                <h2> Week 2:</h2>
                   <p>Notification</p>
                 </div>
                 <div className="back">
@@ -70,7 +87,7 @@ const Home = () => (
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
-                <h1> Week 3:</h1>
+                <h2> Week 3:</h2>
                   <p>Button</p>
                 </div>
                 <div className="back">
@@ -85,7 +102,7 @@ const Home = () => (
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
-                <h1> Week 4:</h1>
+                <h2> Week 4:</h2>
                   <p>Login screen</p>
                 </div>
                 <div className="back">
@@ -100,7 +117,7 @@ const Home = () => (
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
-                <h1> Week 5:</h1>
+                <h2> Week 5:</h2>
                   <p>Mobile Navigation</p>
                 </div>
                 <div className="back">
@@ -115,7 +132,7 @@ const Home = () => (
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
-                <h1> Week 6:</h1>
+                <h2> Week 6:</h2>
                   <p>Dropdown menu</p>
                 </div>
                 <div className="back">
@@ -130,7 +147,7 @@ const Home = () => (
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
-                <h1> Week 7:</h1>
+                <h2> Week 7:</h2>
                   <p>Forms & user feedback</p>
                 </div>
                 <div className="back">
@@ -145,7 +162,7 @@ const Home = () => (
             <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
               <div className="flipper">
                 <div className="front">
-                <h1> Week 8:</h1>
+                <h2> Week 8:</h2>
                   <p>Modal</p>
                 </div>
                 <div className="back">
