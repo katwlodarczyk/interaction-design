@@ -149,7 +149,7 @@ const Home = () => (
                   <p>Modal</p>
                 </div>
                 <div className="back">
-                  <img src="./assets/week7-display.jpg" className="week-display" alt="week8"/>
+                  <img src="./assets/week8-display.jpg" className="week-display" alt="week8"/>
                 </div>
               </div>
             </div>

@@ -16,16 +16,16 @@ const OuterWrapper = styled.div`
 
 const StyledWrapper = styled.div`
     display: flex;
-    justify-content: start;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     height: 60vh;
-    width: 30vw;
+    width: 40vw;
     margin:0 auto;
     z-index: 950;
     position: relative;
     background: #ffffff;
-    padding: 32px 38px;
+    padding: 28px 28px;
     border-radius: 8px;
     margin: 5px 10px;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
@@ -60,25 +60,29 @@ const Section = styled.div`
     align-items: center;
     align-self: center;
     height: 80%;
-    justify-content: space-around;
+    padding: 0 24px;
+    justify-content: space-evenly;
     @media (max-width: 1024px){
-        height: 100%;
+        height: 80%;
     }
     @media (max-width: 700px) {
         justify-content: space-evenly;
         height: 90%;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         height: 80%;
     }
 `;
 
 
 const StyledImage = styled.img`
-    width: 100%;
+    height: 70%;
     display: flex;
     justify-content: center;
     align-self: center;
+    @media (max-width: 600px) {
+        height: 60%;
+    }
 `;
 
 
@@ -93,6 +97,7 @@ const StyledButton = styled.button`
   border: 0;
   cursor: pointer;
   outline-color: #896EFD; 
+  margin: 16px 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   &:hover {
     background: #B8A7FE;
@@ -100,11 +105,14 @@ const StyledButton = styled.button`
   }
   @media (max-width: 1024px){
     width: 250px;
-    font-size: 22px;
+    font-size:18px;
 }
   @media (max-width: 600px) {
-    width: 150px;
     font-size: 16px;
+  }
+  @media (max-width: 500px) {
+    width: 150px;
+  }
 `;
 
 const ModalWrapper = styled.div`
@@ -127,7 +135,10 @@ const StyledModal = styled.div`
   background: #fff;
   color: #26295c;
   border-radius: 12px;
-  padding: 16px; 16px;
+  padding: 16px;
+  @media (max-width: 360px) {
+      height: 85%;
+  }
 `;
 
 const StyledCloseIcon = styled.img`
@@ -148,8 +159,9 @@ const StyledInside = styled.div`
     justify-content: space-between;
     height: 80%;
     padding: 0 24px 24px 24px;
-    @media (max-width: 660px) {
+    @media (max-width: 800px) {
         flex-direction: column;
+        padding: 12px 0 0 0;
     }
 `;
 
@@ -159,16 +171,46 @@ const StyledInfo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    align-content: flex-end;
     justify-content: center;
-    padding: 24px;
+    padding: 12px;
+    @media (max-width: 800px) {
+        width: 90%;
+        align-items: center;
+        align-content: center;
+    }
 `;
 
 const StyledDetailImage = styled.img`
     width: 50%;
-    padding: 24px;
     display: flex;
     justify-content: center;
     align-self: center;
+    @media (max-width: 800px) {
+        width: 90%;
+        
+    }
+`;
+
+const StyledModalHeader = styled.h1`
+    font-size: 28px;
+    @media (max-width: 800px) {
+        font-size: 24px;
+    }
+    @media (max-width: 400px) {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    @media (max-width: 360px) {
+        margin-top: 10px;
+    }
+`;
+
+const StyledText = styled.p`
+    text-align: end;
+    @media (max-width: 800px) {
+        text-align: center;
+    }
 `;
 
 const StyledLink = styled.a`
@@ -216,18 +258,18 @@ function Week8() {
             </a>
 
             <Modal show={showModal} onClick={handleClick} onClose={handleCloseModal}>
-                <h1>Rocket Launch by 
+                <StyledModalHeader>Rocket Launch by 
                     <span>
                         <StyledLink href="https://www.manypixels.co/gallery/?page=1&s=rocket&style=twoColor"> manypixels
                         </StyledLink>
                     </span>
-                </h1>
+                </StyledModalHeader>
                 <StyledInside>
                     <StyledDetailImage src={rocket} alt=""></StyledDetailImage>
                     <StyledInfo>
                         <h2>Details:</h2>
-                        <p>Beautiful illustration in two-color style.</p>
-                        <p>Royalty-free to download in SVG on PNG format.</p>
+                        <StyledText>Beautiful illustration in two-color style.</StyledText>
+                        <StyledText>Royalty-free to download in SVG on PNG format.</StyledText>
                         <StyledButton>Go to manypixels</StyledButton> 
                     </StyledInfo>
                 </StyledInside>
