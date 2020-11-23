@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styled, { keyframes } from 'styled-components';
 import goback from './../../assets/back-icon.svg';
-import loginImage from './../../assets/login-image.png';
 import closeIcon from './../../assets/close-icon.svg';
 import rocket from './../../assets/rocket.png';
+import spinner from './../../assets/spinner.svg';
 
 const OuterWrapper = styled.div`
     width: 100vw;
@@ -220,6 +220,11 @@ const StyledLink = styled.a`
    }
 `;
 
+const StyledSpinner = styled.img`
+
+`;
+
+
 const Modal = (props) => {
     const {show, onClose, children} = props;
     const blockClick = (e) => {
@@ -240,6 +245,7 @@ const Modal = (props) => {
 
 function Week8() {
     const [showModal, setShowModal] = useState(false);
+    const [click, setClick] = useState(false);
 
     const handleCloseModal = () => {
         setShowModal(false);
@@ -248,9 +254,11 @@ function Week8() {
     const handleClick = () => {
         setShowModal(true);
     }
-   
 
-    
+    const handleGo = () =>{
+        setClick(!click)
+    }
+  
     return (
         <OuterWrapper>
             <a href="/interaction-design/">
@@ -270,7 +278,14 @@ function Week8() {
                         <h2>Details:</h2>
                         <StyledText>Beautiful illustration in two-color style.</StyledText>
                         <StyledText>Royalty-free to download in SVG on PNG format.</StyledText>
-                        <StyledButton>Go to manypixels</StyledButton> 
+                        <StyledButton onClick={handleGo}>
+                            { !click && 
+                                (<span>Go to manypixels</span>)
+                            }
+                            { click &&
+                            ( <StyledSpinner src={spinner}></StyledSpinner>)
+                            }
+                        </StyledButton> 
                     </StyledInfo>
                 </StyledInside>
             </Modal>
