@@ -8,6 +8,7 @@ import Week5 from './components/week5';
 import Week6 from './components/week6';
 import Week7 from './components/week7';
 import Week8 from './components/week8';
+import Week9 from './components/week9';
 import styled from 'styled-components';
 import css from './App.css';
 
@@ -172,6 +173,21 @@ const Home = () => (
             </div>
             </Link>
           </li>
+          <li className="flex-item">
+            <Link to="/interaction-design/week-9">
+            <div className="flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div className="flipper">
+                <div className="front">
+                <h2> Week 9:</h2>
+                  <p>Toggle Switch</p>
+                </div>
+                <div className="back">
+                  <img src="./assets/week9-display.jpg" className="week-display" alt="week9"/>
+                </div>
+              </div>
+            </div>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
@@ -206,6 +222,9 @@ function App() {
           </Route>
           <Route path="/interaction-design/week-8">
             <Week8 />
+          </Route>
+          <Route path="/interaction-design/week-9">
+            <Week9 />
           </Route>
           <Route path="/interaction-design/">
             <Home />
