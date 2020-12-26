@@ -5,12 +5,9 @@ import iphone from './../../assets/iphone-x.png';
 import hamburgerMenu from './../../assets/hamburger-menu.svg';
 import closeIcon from './../../assets/close-icon.svg';
 import statusBar from './../../assets/status-bar.svg';
-import loginImage from './../../assets/login-image.png';
 import userAvatar from './../../assets/user-avatar.png';
-import statsGroup from './../../assets/stats-group.png';
 import pictureGroup from './../../assets/picture-group.png';
 import appBottomMenu from './../../assets/app-bottom-menu.png';
-import { Button } from './../week3';
 import { Swipeable } from 'react-swipeable';
 
 
@@ -139,18 +136,6 @@ const StyledHeader = styled.h1`
   margin-bottom:0;
 `;
 
-const StyledLink = styled.a`
-   font-size: 12px;
-   align-content: center;
-   justify-content: center;
-   display:flex;
-   color: #8f8f8f;
-   &:hover{
-       text-decoration: underline;
-       color: #896EFD;
-   }
-`;
-
 const StyledHeaderSection = styled.div`
    display: flex;
    flex-direction: row;
@@ -207,10 +192,6 @@ const FollowMeButton = styled.button`
    color: #ffffff;
    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.25));
    cursor: pointer;
-`;
-
-const StyledInputGroup = styled.div`
-  margin: 5px auto;
 `;
 
 const StyledFeed = styled.img`
@@ -287,7 +268,7 @@ function Week5() {
                                     </StyledSideNav>
 
                                     <StyledHamburger onClick={handleOpen}>
-                                        <img src={hamburgerMenu}></img>
+                                        <img src={hamburgerMenu} alt="hamburgermenu"></img>
                                     </StyledHamburger>
                                 </StyledNavWrapper>
                             </Swipeable>

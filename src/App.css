@@ -7,8 +7,8 @@
 }
 
 .flip-container, .front, .back {
-  width: 410px;
-  height: 382px;
+  width: 317px;
+  height: 317px;
 }
 
 @media (max-width: 450px){
@@ -203,4 +203,18 @@ a:active {
 
 .week6svg:hover{
   fill: white;
+}
+
+.card-body {
+  background-color: #e4ecf8;
+}
+
+.card-header:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+.card-header svg {
+  margin-left: 10px;
+  fill: currentColor;
 }

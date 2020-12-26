@@ -137,7 +137,7 @@ const StyledModal = styled.div`
   border-radius: 12px;
   padding: 16px;
   @media (max-width: 360px) {
-      height: 85%;
+      height: fit-content;
   }
 `;
 

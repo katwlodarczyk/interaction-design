@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import styled from 'styled-components';
 import goback from './../../assets/back-icon.svg';
-import iphone from './../../assets/iphone-x.png';
 import showIcon from './../../assets/show-icon.svg';
 import hideIcon from './../../assets/hide-icon.svg';
-import facebookIcon from './../../assets/facebook-icon.svg';
-import googleIcon from './../../assets/google-icon.svg';
-import appleIcon from './../../assets/apple-icon.svg';
-import statusBar from './../../assets/status-bar.svg';
 import spinner from './../../assets/spinner.svg';
 import loginImage from './../../assets/login-image.png';
 import { useForm } from "react-hook-form";
@@ -237,11 +232,9 @@ const StyledSpinner = styled.img`
 function Week7() {
 
     const [showPassword, setShowPassword] = useState(false);
-    const [submitted, setSubmitted] = useState(false);
-    const [submit, setSubmit] = useState(false);
     const [click, setClick] = useState(false);
 
-    const { register, handleSubmit, watch, errors } = useForm({
+    const { register, handleSubmit, errors } = useForm({
         resolver: yupResolver(schema),
     });
     const onSubmit = (data) =>  setClick(!click);
@@ -249,10 +242,6 @@ function Week7() {
     const handleClick = (e) => {
         setShowPassword(!showPassword);
     };
-
-    // const handleSubmit = () =>{
-    //     setClick(!click)
-    // }
 
     return (
         <OuterWrapper>
