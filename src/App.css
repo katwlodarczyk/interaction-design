@@ -103,16 +103,14 @@
   -webkit-order: 0;
   -ms-flex-order: 0;
   order: 0;
-  -webkit-flex: 0 1 25%;
-  -ms-flex: 0 1 25%;
-  flex: 0 1 25%;
+  -webkit-flex: 0 1 16%;
+  -ms-flex: 0 1 16%;
+  flex: 0 1 16%;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
-  margin: 30px 10px;
+  margin: 30px 82px;
 }
-
-
 
 ul {
   display: flex;
@@ -207,6 +205,10 @@ a:active {
 
 .card-body {
   background-color: #e4ecf8;
+}
+
+.card-header {
+  width: 100vw;
 }
 
 .card-header:hover {
