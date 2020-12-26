@@ -50,7 +50,7 @@ const Intersection = styled.div`
    position: relative;
    display: flex;
    flex-direction: column;
-   width: 80%;
+   width: 100%;
    height: 100%;
    z-index: 5;
    padding-top: 50px;
@@ -64,7 +64,7 @@ const Intersection = styled.div`
     animation: ${time} ${({ showLightfont }) => showLightfont && setAnimation({ backgroundColor: 'black' }, { backgroundColor: '#ffffff' })} linear;
     animation-fill-mode: forwards;
     border-radius: 12px;
-    bottom: 12%;
+    bottom: 5%;
     left: calc(50% - 50px);
    }
    `;
@@ -208,7 +208,6 @@ const Toggle = (props) => {
 function Week9() {
     const [navOpen, setNavOpen] = useState(false);
     const [ open, setOpen ] = useState(false);
-    const [click, setClick] = useState(false);
     const [showBackground, setShowBackground] = useState(false);
     const [showLightfont, setShowLightfont] = useState(false);
 

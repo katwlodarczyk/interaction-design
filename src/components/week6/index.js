@@ -1,4 +1,4 @@
-import React, { useState , useEffect} from "react";
+import React, { useState } from "react";
 import styled, { keyframes } from 'styled-components';
 import goback from './../../assets/back-icon.svg';
 import iphone from './../../assets/iphone-x.png';
@@ -8,11 +8,6 @@ import statusBar from './../../assets/status-bar.svg';
 import arrow from './../../assets/chevron-down.svg';
 import traveling from './../../assets/traveling.png';
 import spinner from './../../assets/spinner.svg';
-import userAvatar from './../../assets/user-avatar.png';
-import statsGroup from './../../assets/stats-group.png';
-import pictureGroup from './../../assets/picture-group.png';
-import appBottomMenu from './../../assets/app-bottom-menu.png';
-import { Button } from './../week3';
 import { Swipeable } from 'react-swipeable';
 
 
@@ -140,19 +135,6 @@ const StyledHeader = styled.h1`
   justify-content: start;
   margin-bottom:0;
 `;
-
-const StyledLink = styled.a`
-   font-size: 12px;
-   align-content: center;
-   justify-content: center;
-   display:flex;
-   color: #8f8f8f;
-   &:hover{
-       text-decoration: underline;
-       color: #896EFD;
-   }
-`;
-
 
 const StyledImage = styled.img`
     width: 65%;
@@ -310,7 +292,6 @@ function Week6() {
     const [navOpen, setNavOpen] = useState(false);
     const [ open, setOpen ] = useState(false);
     const [click, setClick] = useState(false);
-    const [submit, setSubmit] = useState(false);
     const [selectedItem, setSelectedItem] = useState("Preferred method of transport");
 
     const handleClose = () => {
@@ -343,11 +324,6 @@ function Week6() {
     }
 
     const handleSubmit = () =>{
-        // if (click) {
-        //     setTimeout(() => {
-            
-        //     }, 3000);
-        // }
     
         setClick(!click)
     }
@@ -385,7 +361,7 @@ function Week6() {
                                     </StyledSideNav>
 
                                     <StyledHamburger onClick={handleOpen}>
-                                        <img src={hamburgerMenu}></img>
+                                        <img src={hamburgerMenu} alt="hamburgermenu"></img>
                                     </StyledHamburger>
                                 </StyledNavWrapper>
                             </Swipeable>
@@ -393,7 +369,7 @@ function Week6() {
                         <StyledImage src={traveling}></StyledImage>
                         <StyledButton onClick={handleClick}>
                             <p>{selectedItem}</p>
-                            <img src={arrow}></img>
+                            <img src={arrow} alt="arrow"></img>
                         </StyledButton>
                         <Dropdown open={open} onClick={handleMenuClick}/>
                         <StyledSubmit onClick={handleSubmit}>

@@ -4,9 +4,6 @@ import goback from './../../assets/back-icon.svg';
 import iphone from './../../assets/iphone-x.png';
 import showIcon from './../../assets/show-icon.svg';
 import hideIcon from './../../assets/hide-icon.svg';
-import facebookIcon from './../../assets/facebook-icon.svg';
-import googleIcon from './../../assets/google-icon.svg';
-import appleIcon from './../../assets/apple-icon.svg';
 import statusBar from './../../assets/status-bar.svg';
 import loginImage from './../../assets/login-image.png';
 import { useForm } from "react-hook-form";
@@ -204,9 +201,8 @@ const StyledButton = styled.button`
 function Week4() {
 
     const [showPassword, setShowPassword] = useState(false);
-    const [submitted, setSubmitted] = useState(false);
 
-    const { register, handleSubmit, watch, errors } = useForm({
+    const { register, handleSubmit, errors } = useForm({
         resolver: yupResolver(schema),
     });
     const onSubmit = (data) => console.log(data);

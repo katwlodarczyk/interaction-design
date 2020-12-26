@@ -1,8 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
 import goback from './../../assets/back-icon.svg';
-import iphone from './../../assets/iphone-x.png';
-import wallpaper from './../../assets/wallpaper.jpg';
 import add from './../../assets/add.svg';
 import send from './../../assets/send.svg';
 
@@ -66,7 +64,7 @@ function Week3() {
                         <Button className="button" color="#6200ee">PRIMARY</Button>
                         <Button className="button" color="#1200ee">SECONDARY</Button>
                         <Button className="button" color="#1280ee"><Icon src={send}></Icon><span> WITH ICON</span></Button>
-                        <Button className="button" color="#1280ee"><img src={add}></img></Button>
+                        <Button className="button" color="#1280ee"><img src={add} alt="button"></img></Button>
                         <Button color="#a3b7ca" disabled={true}>DISABLED</Button>
                 </StyledDiv>
             </StyledWrapper>
