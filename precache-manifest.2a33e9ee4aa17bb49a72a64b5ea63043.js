@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4fffe950f9921bb100ab13129b8c488d",
+    "revision": "b6e07503ef1167c1a564808447ba0dbe",
     "url": "/interaction-design/index.html"
   },
   {
-    "revision": "ed8ecdbbe3f39266db4e",
-    "url": "/interaction-design/static/css/main.3dbb0ac5.chunk.css"
+    "revision": "9031ec2f059c56a5c589",
+    "url": "/interaction-design/static/css/2.2a86faee.chunk.css"
   },
   {
-    "revision": "39e81c6c500d4871529b",
-    "url": "/interaction-design/static/js/2.905ad8ac.chunk.js"
+    "revision": "b3683ae66f9c012d22d3",
+    "url": "/interaction-design/static/css/main.524e19e5.chunk.css"
   },
   {
-    "revision": "8f5425c5c2032ef521d48b72696053de",
-    "url": "/interaction-design/static/js/2.905ad8ac.chunk.js.LICENSE.txt"
+    "revision": "9031ec2f059c56a5c589",
+    "url": "/interaction-design/static/js/2.22f803bb.chunk.js"
   },
   {
-    "revision": "ed8ecdbbe3f39266db4e",
-    "url": "/interaction-design/static/js/main.668630f6.chunk.js"
+    "revision": "56d41548479f8d7a081b36fc36026924",
+    "url": "/interaction-design/static/js/2.22f803bb.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "b3683ae66f9c012d22d3",
+    "url": "/interaction-design/static/js/main.c4bbf076.chunk.js"
   },
   {
     "revision": "2810460e4a2244f3cbbe",
@@ -26,10 +30,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "62513d6ec085a532b9053e9a0b0b5b4b",
     "url": "/interaction-design/static/media/add.62513d6e.svg"
-  },
-  {
-    "revision": "70b5b818f4b9f25f9fb9fe154132668c",
-    "url": "/interaction-design/static/media/apple-icon.70b5b818.svg"
   },
   {
     "revision": "bbb063b5dfdf81d7fc8c724f2862c79c",
@@ -48,16 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/interaction-design/static/media/close-icon.361ac511.svg"
   },
   {
-    "revision": "31285b20da65479d503deae3457486fa",
-    "url": "/interaction-design/static/media/facebook-icon.31285b20.svg"
-  },
-  {
     "revision": "b3d60fdaa62d0a870bb051e6a59e9ea2",
     "url": "/interaction-design/static/media/flashlight-icon.b3d60fda.svg"
-  },
-  {
-    "revision": "cbf460d02f2d4aa63b4801b8a2cbbfa0",
-    "url": "/interaction-design/static/media/google-icon.cbf460d0.svg"
   },
   {
     "revision": "4ebeb187162d3cda9ca43bd66ae27802",
