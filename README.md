@@ -54,9 +54,32 @@ An illustration from Undraw.co have been imported to Figma, and separate frames 
 
 ![illustration](./src/assets/illustration.jpg)
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1N3XzTEanRil1uvJlh741f%2Fshopping-cart-gif%3Fnode-id%3D28%253A0" allowfullscreen></iframe>
+After that, an iPhone X frame has been selected and a prototype design created using chosen colour palette. 
+
+![figma display](./src/assets/figma-display.jpg)
+[See Figma file](https://www.figma.com/file/1N3XzTEanRil1uvJlh741f/shopping-cart-gif?node-id=28%3A0)
+
+---
+### Coding:
+![screen cast](./src/assets/week1.png)
 
 
 ---
+### Screencast
 
-[^1] PANNAFINO, J., 2012. Interdisciplinary interaction design United States: Assiduous Publishing. p.45
+![week1 code](./src/assets/1.gif)
+
+---
+
+### Reflection
+
+The created component is solving real-world problem of notifying user about the change/work in the background and keepeing him engaged while waiting. Common industry standards and principles have been identified and used. Research have provided necessary insights of human attention span and gamification concept.
+
+---
+
+[^1] PANNAFINO, J., 2012. *Interdisciplinary interaction design*. United States: Assiduous Publishing. p.45
+
+--- 
+
+
+## 2. Toggle Switch
