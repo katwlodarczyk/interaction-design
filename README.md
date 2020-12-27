@@ -54,7 +54,15 @@ An illustration from Undraw.co have been imported to Figma, and separate frames 
 
 ![illustration](./src/assets/illustration.jpg)
 
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1N3XzTEanRil1uvJlh741f%2Fshopping-cart-gif%3Fnode-id%3D28%253A0" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
+
+<div>
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1N3XzTEanRil1uvJlh741f%2Fshopping-cart-gif%3Fnode-id%3D28%253A0" allowfullscreen></iframe>
+</div>
 
 
 ---
