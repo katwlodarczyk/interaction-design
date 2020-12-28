@@ -106,7 +106,7 @@ const StyledDummyDiv = styled.div`
    display:flex;
    position: relative;
    width: 100%;
-   height: 80%;
+   height: 100%;
    padding-top: 20px;
    flex-direction: column;
    flex-wrap: wrap;
@@ -123,7 +123,7 @@ const StyledDummy1 = styled.div`
     margin-right: 10px;
     margin-bottom: 10px;
     order: 0;
-    flex: 0 1 50%;
+    flex: 0 1 52%;
     align-self: auto;
 `;
 const StyledDummy2 = styled.div`
@@ -131,7 +131,7 @@ const StyledDummy2 = styled.div`
     width: 120px;
     background: #F2F2F2;
     order: 0;
-    flex: 0 1 30%;
+    flex: 0 1 35%;
     align-self: auto;
     border-radius: 10px;
 `;
@@ -142,7 +142,7 @@ const StyledDummy3 = styled.div`
     border-radius: 10px;
     margin-bottom: 10px;
     order: 1;
-    flex: 0 1 30%;
+    flex: 0 1 35%;
     align-self: auto;
 `;
 const StyledDummy4 = styled.div`
@@ -151,7 +151,7 @@ const StyledDummy4 = styled.div`
     background: #F2F2F2;
     border-radius: 10px;
     order: 1;
-    flex: 0 1 50%;
+    flex: 0 1 52%;
     align-self: auto;
 `;
 
@@ -172,15 +172,15 @@ const StyledToggle = styled.div`
 const StyledSwitch = styled.span`
    background: #ffffff url('./assets/smiley-sun.svg') no-repeat center;
    z-index: 101;
-   width:28px;
-   height: 26px;
+   width:24px;
+   height: 24px;
    border-radius: 50px;
    display:flex;
    justify-content:center;
    align-self: center;
    margin-left: 3px;
-   margin-top:0.5px;
-   animation: ${time}  ${({dark}) => dark && setAnimation({marginLeft: '3px', background: '#ffffff url(\'./assets/smiley-sun.svg\') no-repeat center'}, {marginLeft: '26px', background: '#ffffff url(\'./assets/smiley-moon.svg\') no-repeat center'})} linear;
+   margin-top:0px;
+   animation: ${time}  ${({dark}) => dark && setAnimation({marginLeft: '3px', background: '#ffffff url(\'./assets/smiley-sun.svg\') no-repeat center'}, {marginLeft: '30px', background: '#ffffff url(\'./assets/smiley-moon.svg\') no-repeat center'})} linear;
    cursor: pointer;
    animation-fill-mode: forwards;
 `;

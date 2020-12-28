@@ -1,6 +1,8 @@
 # Interaction Design
 
 #### Hosted at: https://katwlodarczyk.github.io/interaction-design/
+---
+
 
 ## Introduction
 
@@ -30,7 +32,7 @@ Primary colour (#6C63FF) have been used for animated objects, such as products a
 Secondary colour (#D1D9E4) have been used as a background. Additionaly, dark secondary colour variant (#A5B9CB) is used as a background blob for the animation, to create a sense of belonging.
 White (#FFFFFF) and black (#000000) have been chosen for typography. For good contrast, white is used on dark backgrounds, and black on light backgrounds.
 
-### Motion 
+#### Motion 
 
 As stated previously, motion can provide feedback. A good transition choreography, a sequence in which elements move, helps users understand what is happening and what has changed. 
 Using the animation of a person filling the shopping cart with one product at a time, an showing how many products have left on the shelf, user can evaluate how long he has to wait. 
@@ -57,17 +59,18 @@ An illustration from Undraw.co have been imported to Figma, and separate frames 
 After that, an iPhone X frame has been selected and a prototype design created using chosen colour palette. 
 
 ![figma display](./src/assets/figma-display.jpg)
-[See Figma file](https://www.figma.com/file/1N3XzTEanRil1uvJlh741f/shopping-cart-gif?node-id=28%3A0)
+
+### [Explore the Splash Screen Figma file](https://www.figma.com/file/1N3XzTEanRil1uvJlh741f/shopping-cart-gif?node-id=28%3A0)
 
 ---
 ### Coding:
-![screen cast](./src/assets/week1.png)
+![week1 code](./src/assets/week1.png)
 
 
 ---
 ### Screencast
 
-![week1 code](./src/assets/1.gif)
+![screen cast](./src/assets/1.gif)
 
 ---
 
@@ -83,3 +86,69 @@ The created component is solving real-world problem of notifying user about the 
 
 
 ## 2. Toggle Switch
+
+![toggle switch](./src/assets/week9-display.jpg)
+
+---
+### Research
+
+According to Material Design (https://material.io/components/switches), *"switches are the preferred way to adjust settings on mobile"*. These components are great to toggle between the state of the option (for example on and off) with immediate effect. Animated switch thumb provides easy to understand feedback signaling the change.
+
+#### Light/Dark mode
+
+Providing the ability to change theme of the website or app have become a new trend in UX/UI. Apart from being hipp and cool, this movement also increases usability and accesibility. As [Sheri Byrne-Haber](https://uxdesign.cc/accessibility-and-dark-ui-themes-f01001339b65) [^2] states, *"Dark modes are less prone to triggering photophobia"* and are *"easier to use in a dimly lit room"*. Some people find it easier to read white letters on a dark background rather than dark letters on a light background. Byrne-Haber also points out, that switching between light and dark mode should be *"obvoius and easy to find"* and that the chosen option should be saved for any future visit of that user. 
+
+---
+### Evaluation of guidelines
+
+Toggle switches should adapt to different platforms, to match the overall design and familiar functionality. This component has been designed for IOS system, hence the platform-specific design have been applied.
+
+#### Touch target / Size
+When designing for touch screen devices, the size of clickable elements should be big enough for a comfortable usage. *"Touch target refers to the target are of a digital button or link in relation to a person's finger size."* [^1] Material Design advices to design the switch thumb 20px big with the switch track 36px wide. Apple does not provide exact measurements for IOS.
+
+#### Colour 
+
+Toggle switches should be customised to match the colour scheme of the application. Both Material Design and Apple recommend tinting a switch.
+This switch has been created to toggle between light and dark mode, so it is using two colour gradients, accordingly of the selected option. 
+
+#### Motion
+
+Similarly to the splash screen component, subtle animation provides user with immediate, noticable feedback.
+
+---
+### Planning and design prototyping
+
+Design prototyping began from creating two toggle switches, one for each toggle state.
+
+![switches](./src/assets/togglers.jpg)
+
+Icons used for this project are from [Iconify plugin for Figma](https://www.figma.com/community/plugin/735098390272716381/Iconify) and status bar is a part of a [Navigation bar community file](https://www.figma.com/community/file/820010220549989949). 
+Having all the assets, two Iphone X frames were created, with status bars, switches, some dummy content containers and an IOS swipe up bar. Background for each frame is set to match the gradient of the toggle switch.
+
+![frames](./src/assets/frames.jpg)
+
+### [Explore the Toggle Switch Figma file](https://www.figma.com/file/KLM2XcjdWnYNGjv82R3RCu/toggle-switch?node-id=33%3A0)
+
+--- 
+
+### Coding
+![week9 code](./src/assets/week9.png)
+
+
+---
+### Screencast
+
+![screen cast](./src/assets/toggle-cast.gif)
+
+---
+
+### Reflection
+
+Popularity of dark themes is increasing and more websites or applications give their users the ability to choose between light and dark mode. Using a toggle switch for this purpose is an efficient way to present the available choice. Sun and moon emoji icons are a familiar symbols of light and dark. This graphic representation makes it clear on what the component is used for.
+
+Created toggle switch is a modern approach to present a choice that increases accesibility and usability, while still fitting within the industry and specific platform standards.  
+
+---
+[^1]: PANNAFINO, J., 2012. *Interdisciplinary interaction design*. United States: Assiduous Publishing. p.78
+
+[^2]: BYRNE-HABER, S. , 2019. *Dark UI themes are new and cool — but are they accessible?* In UX Collective. 16.09.2019
