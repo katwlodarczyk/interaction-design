@@ -96,7 +96,7 @@ According to Material Design (https://material.io/components/switches), *"switch
 
 #### Light/Dark mode
 
-Providing the ability to change theme of the website or app have become a new trend in UX/UI. Apart from being hipp and cool, this movement also increases usability and accesibility. As [Sheri Byrne-Haber](https://uxdesign.cc/accessibility-and-dark-ui-themes-f01001339b65) [^2] states, *"Dark modes are less prone to triggering photophobia"* and are *"easier to use in a dimly lit room"*. Some people find it easier to read white letters on a dark background rather than dark letters on a light background. Byrne-Haber also points out, that switching between light and dark mode should be *"obvoius and easy to find"* and that the chosen option should be saved for any future visit of that user. 
+Providing the ability to change theme of the website or app have become a new trend in UX/UI. Apart from being hipp and cool, this movement also increases usability and accesibility. As [Sheri Byrne-Haber](https://uxdesign.cc/accessibility-and-dark-ui-themes-f01001339b65) [^1] states, *"Dark modes are less prone to triggering photophobia"* and are *"easier to use in a dimly lit room"*. Some people find it easier to read white letters on a dark background rather than dark letters on a light background. Byrne-Haber also points out, that switching between light and dark mode should be *"obvoius and easy to find"* and that the chosen option should be saved for any future visit of that user. 
 
 ---
 ### Evaluation of guidelines
@@ -104,7 +104,7 @@ Providing the ability to change theme of the website or app have become a new tr
 Toggle switches should adapt to different platforms, to match the overall design and familiar functionality. This component has been designed for IOS system, hence the platform-specific design have been applied.
 
 #### Touch target / Size
-When designing for touch screen devices, the size of clickable elements should be big enough for a comfortable usage. *"Touch target refers to the target are of a digital button or link in relation to a person's finger size."* [^1] Material Design advices to design the switch thumb 20px big with the switch track 36px wide. Apple does not provide exact measurements for IOS.
+When designing for touch screen devices, the size of clickable elements should be big enough for a comfortable usage. *"Touch target refers to the target are of a digital button or link in relation to a person's finger size."* [^2] Material Design advices to design the switch thumb 20px big with the switch track 36px wide. Apple does not provide exact measurements for IOS.
 
 #### Colour 
 
@@ -149,6 +149,73 @@ Popularity of dark themes is increasing and more websites or applications give t
 Created toggle switch is a modern approach to present a choice that increases accesibility and usability, while still fitting within the industry and specific platform standards.  
 
 ---
-[^1]: PANNAFINO, J., 2012. *Interdisciplinary interaction design*. United States: Assiduous Publishing. p.78
+[^1]: BYRNE-HABER, S. , 2019. *Dark UI themes are new and cool — but are they accessible?* In: UX Collective. 16.09.2019
 
-[^2]: BYRNE-HABER, S. , 2019. *Dark UI themes are new and cool — but are they accessible?* In UX Collective. 16.09.2019
+[^2]: PANNAFINO, J., 2012. *Interdisciplinary interaction design*. United States: Assiduous Publishing. p.78
+
+--- 
+
+
+## 3. Mobile Navigation
+
+![mobile navigation](./src/assets/week5-display.jpg)
+
+---
+### Research
+
+Navigation is a crucial feauture of any website or application, as it helps user find its way around. There are many types of different navigations, and choosing the right one for a project will have a big impact whether it is successful or not.
+
+Mobile screens are small, and designers should remember to *"prioritize content over chrome"* [^1]. The challenge is to make navigation accessible while doing so. 
+
+Different operating systems have their own specific guidelines, which should be followed when designing for a specific one.
+
+There are four main groups of navigations usually used while creating a mobile friendly website or app: navigation bar, tab bar, hamburger menu and navigation hub.
+
+This component uses two different navigation systems- tab bar (bottom navigation) and a hamburger menu. Tab bar, being the most accesible and visible on all pages, have been used for the most important destinations. Hamburger menu, placed in the top right, contains less popular items, like settings or about app page link. 
+ 
+---
+### Evaluation of guidelines
+
+Material Design advices to use [bottom navigation](https://material.io/components/bottom-navigation) for items that need to be accesible from anywhere in the app. The principle is to place only three to five destinations. Icons used on bottom navigation should be easy to understand, with or without labels. 
+Items on bottom navigation should change appearance when changing state, to notify user where he is now, therefore an active icon should be different colour than the inactive ones. Hamburger menus, or navigation drawers, are recommended by Material Design for apps with more than 5 destinations, multiple level hierarchy and for quick navigation between unrelated items. 
+
+Apple guidelines for [bottom navigation](https://developer.apple.com/design/human-interface-guidelines/ios/bars/tab-bars/) are simmilar. They should be used for the most important destinations only. There are, however, no guidelines for hamburger menus. 
+
+As previously stated, created component have two navigations. 
+
+Tab bar navigation is used to direct user to the five, most popular destinations in the app: home, chat, add new, notifications and user profile. It is visible and accessible at all times. Its bottom position makes it comfortable to use with a thumb. Icons are very symbollic, and easy to understand. Active item is accenturated with a different colour.
+
+The top right location of the hamburger menu icon is the most popular for this purpose, which makes it easy to find. Items in the menu are big enough and with appropriate spaces between elements to tap comfortably at a wanted content. To diffrentiate the open menu from the main area, a delicate overlay is created to dim the main window content and to help user focus on the menu. Items placed in this navigation location are less popular and usually accessed less often. 
+
+Colour palette used for this component matches overal palette of the app.
+
+---
+### Planning and design prototyping
+
+Planning began from exploring possible options and grouping items that needed to be present in a navigation.
+
+The layout of the app page has been created, then both bottom navigation and a hamburger menu were designed. Lastly, transition animations were added to fully express the idea.
+
+### [Explore the Mobile Navigation Figma file](https://www.figma.com/file/Pk6WKZqfGc468qzscqjb4b/Untitled?node-id=0%3A1)
+
+--- 
+
+### Coding
+![week5 code](./src/assets/3.png)
+
+
+---
+### Screencast
+
+![screen cast](./src/assets/3.gif)
+
+---
+
+### Reflection
+
+Conducted research have helped to identfiy possible options for displaying navigation and to choose the right one for a needed purpose. 
+Guidelines provided by Material Design and Apple revealed design principles needed to create the best possible outcome that solves real-world problem.
+Presented component is up to the current industry standards.
+
+---
+[^1]: BUDIU, R. , 2015. [*Basic Patterns for Mobile Navigation: A Primer*](https://www.nngroup.com/articles/mobile-navigation-patterns/) In: Nielsen Norman Group. 15.11.2015
