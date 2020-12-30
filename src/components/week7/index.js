@@ -141,12 +141,13 @@ const StyledIcon = styled.img`
   width: 24px;
   height: 24px;
   padding-top: 8px;
+  margin-top: 7px;
   cursor: pointer;
 `;
 
 const StyledErrorText = styled.p`
     color: red;
-    font-size: 12px;
+    font-size: 11px;
     display:flex;
     align-content: start;
     margin-top: 5px;
@@ -164,6 +165,7 @@ const StyledForgotLink = styled.button`
     border: none;
     background-color: transparent;
     padding-top: 5px;
+    padding-left: 0;
     position: relative;
     &:hover{
         text-decoration: underline;
@@ -222,12 +224,29 @@ const StyledButton = styled.button`
     background: #B8A7FE;
     outline: hidden;
   }
+  & p {
+      margin-bottom: 0;
+  }
+  @media screen and (max-width: 660px) {
+    width: 100%;
+  }
 `;
 
 const StyledSpinner = styled.img`
 
 `;
 
+const StyledPolicy = styled.div`
+  font-size: 10px;
+  float: left;
+`;
+
+const Apolicy = styled.a`
+  text-decoration: underline;
+  &:hover {
+    color: #B8A7FE;
+  }
+`;
 
 function Week7() {
 
@@ -252,12 +271,12 @@ function Week7() {
                 <StyledDiv>  
                     <Section>
                             <StyledHeader>Create a new account</StyledHeader>
-                            <StyledLink href="#">or sign in</StyledLink>
+                            <StyledLink href="#">or sign in using social media</StyledLink>
                             <StyledInside class="styledInside-week7">
                                 <StyledImage src={loginImage} alt=""></StyledImage>
                                 <form onSubmit={handleSubmit(onSubmit)}>
                                     <StyledInputGroup>
-                                        <StyledLabel>Name</StyledLabel>
+                                        <StyledLabel>Name*</StyledLabel>
                                             <StyledInput
                                                 type="text"
                                                 name="name"
@@ -267,7 +286,7 @@ function Week7() {
                                             <StyledErrorText> {errors.name?.message}</StyledErrorText>
                                     </StyledInputGroup>
                                     <StyledInputGroup>
-                                        <StyledLabel>Email</StyledLabel>
+                                        <StyledLabel>Email*</StyledLabel>
                                         <StyledInput
                                             type="text"
                                             name="email"
@@ -279,10 +298,11 @@ function Week7() {
                                 
                                     <StyledInputGroup>
                                         <StyledSpan>
-                                            <StyledLabel>Password</StyledLabel>
+                                            <StyledLabel>Password*</StyledLabel>
                                             <StyledIcon
                                                 src={showPassword ? hideIcon : showIcon}
                                                 onClick={handleClick}
+                                                title="Show password"
                                             ></StyledIcon>
                                         </StyledSpan>
                                         <StyledInput
@@ -298,6 +318,7 @@ function Week7() {
                                             </StyledTooltip>
                                         </StyledForgotLink>
                                         <StyledErrorText> {errors.password?.message}</StyledErrorText>
+                                        <StyledPolicy>By signing up, you agree to our <Apolicy href="#">T&C</Apolicy></StyledPolicy>
                                     </StyledInputGroup>
                                     <StyledInputGroup>
                                         <StyledButton onClick={handleSubmit}>
