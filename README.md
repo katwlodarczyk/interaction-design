@@ -8,6 +8,48 @@
 
 This repository is a set of reusable React components that offer design solutions to real-world problems.
 
+ [1. Splash Screen](#-1.-Splash-screen)
+  * [Research](#-research)
+  * [Evaluation of guidelines](#-evaluation-of-guidelines)
+  * [Planning and Design Prototyping](#-planning-and-design-prototyping)
+  * [Coding](#-coding)
+  * [Screencast](#-screencast)
+  * [Reflection](#-reflection)
+
+ [2.  Toggle Switch](#-2.-Toggle-Switch)
+  * [Research](#research-1)
+  * [Evaluation of guidelines](###evaluation-of-guidelines-1)
+  * [Planning and Design Prototyping](#planning-and-design-prototyping-1)
+  * [Coding](#-coding-1)
+  * [Screencast](#-screencast-1)
+  * [Reflection](#-reflection-1)
+
+ [3.  Mobile Navigation](#-3.-Mobile-Navigation)
+  * [Research](#research-2)
+  * [Evaluation of guidelines](###evaluation-of-guidelines-2)
+  * [Planning and Design Prototyping](#planning-and-design-prototyping-2)
+  * [Coding](#-coding-2)
+  * [Screencast](#-screencast-2)
+  * [Reflection](#-reflection-2)
+
+ [4.  Form and user feedback](#-4.-Form-and-user-feedback)
+  * [Research](#research-3)
+  * [Evaluation of guidelines](###evaluation-of-guidelines-3)
+  * [Planning and Design Prototyping](#planning-and-design-prototyping-3)
+  * [Coding](#-coding-3)
+  * [Screencast](#-screencast-3)
+  * [Reflection](#-reflection-3)
+
+ [5.  Modal](#-5.-Modal)
+  * [Research](#research-4)
+  * [Evaluation of guidelines](###evaluation-of-guidelines-4)
+  * [Planning and Design Prototyping](#planning-and-design-prototyping-4)
+  * [Coding](#-coding-4)
+  * [Screencast](#-screencast-4)
+  * [Reflection](#-reflection-4)
+
+
+
 ## 1. Splash screen
 
 ![splash screen](./src/assets/week1-display.jpg)
@@ -224,20 +266,20 @@ Presented component is up to the current industry standards.
 --- 
 
 
-## 3. Forms and User Feedback
+## 4. Forms and User Feedback
 
 ![Forms and User Feedback](./src/assets/week7-display.jpg)
 
 ---
 ### Research
 
-Forms are an important part of websites or applications. As Senior Usablity Engineer [Cliff Anderson](https://www.nngroup.com/online-seminars/fundamentals-designing-usable-and-effective-forms/) points out, *"users complete them to enroll, purchase, register, apply, self-service, and give feedback."* A well-designed form should be as short as possible, fields and their label should be visually grouped together and required fields clearly labeled. Furthermore, Clear or Reset buttons should be avoided.
+Forms are an important part of websites or applications. As Senior Usablity Engineer [Cliff Anderson](https://www.nngroup.com/online-seminars/fundamentals-designing-usable-and-effective-forms/) points out, *"users complete them to enroll, purchase, register, apply, self-service, and give feedback."* A well-designed form should be as short as possible, fields and their label should be visually grouped together and required fields clearly labeled. Furthermore, Clear or Reset buttons should be avoided. [^1]
 
-Any Human-Computer interaction may come with a user error. A form should not allow user to submit without required fields filled up and when the error occurs, an easy-to-read feedback should appear to help user correct any mistakes. [^1] 
+Any Human-Computer interaction may come with a user error. A form should not allow user to submit without required fields filled up and when the error occurs, an easy-to-read feedback should appear to help user correct any mistakes. [^2] 
 
-When asking users to provide sensitive data, security is really important. A solution to reduce the risk of breaching sensitive informations or credentials, is using federated logins. *"Federated logins allow people to log into a website using credentials from other sites—typically larger organisations like Google, Facebook, or Microsoft. In addition to eliminating the need to remember separate credentials, federated logins are also more secure because the large technology companies have more resources devoted to securing their networks and detecting malicious activity. Not storing credentials also decreases the risk for site owners."* [^2]
+When asking users to provide sensitive data, security is really important. A solution to reduce the risk of breaching sensitive informations or credentials, is using federated logins. *"Federated logins allow people to log into a website using credentials from other sites—typically larger organisations like Google, Facebook, or Microsoft. In addition to eliminating the need to remember separate credentials, federated logins are also more secure because the large technology companies have more resources devoted to securing their networks and detecting malicious activity. Not storing credentials also decreases the risk for site owners."* [^3]
 
-Nowadays people browse the internet on laptops, tablets, mobile phones or even their TVs. Such large scale of different screen sizes makes responsive design a neccesity when creating a website. A form should look good and be easy to fill no matter which device is used to access it. Changing size of the elements, repositioning or even eliminating purely decorative content on smallest screens are possible ways to adapt website to users needs. [^3]
+Nowadays people browse the internet on laptops, tablets, mobile phones or even their TVs. Such large scale of different screen sizes makes responsive design a neccesity when creating a website. A form should look good and be easy to fill no matter which device is used to access it. Changing size of the elements, repositioning or even eliminating purely decorative content on smallest screens are possible ways to adapt website to users needs. [^4]
 
 ---
 ### Evaluation of guidelines
@@ -282,8 +324,10 @@ Research and evaluation of guidelines uncovered the best practices to follow. Op
 The form successfully implements the best usability practices while still being modern and visually attractive to the user.
 
 ---
-[^1]: PANNAFINO, J., 2012. *Interdisciplinary interaction design*. United States: Assiduous Publishing. p.80
+[^1]: WHITENTON, K., 2016. [*Website Forms Usability: Top 10 Recommendations*](https://www.nngroup.com/articles/web-form-design/). In: Nielsen Norman Group. 1.05.2016
 
-[^2]: GRIGSBY, J., 2018. *Progressive web apps* New York:A Book Apart. p.117
+[^2]: PANNAFINO, J., 2012. *Interdisciplinary interaction design*. United States: Assiduous Publishing. p.80
 
-[^3]: PANNAFINO, J., 2012. *Interdisciplinary interaction design*. United States: Assiduous Publishing. p.67
+[^3]: GRIGSBY, J., 2018. *Progressive web apps* New York:A Book Apart. p.117
+
+[^4]: PANNAFINO, J., 2012. *Interdisciplinary interaction design*. United States: Assiduous Publishing. p.67
