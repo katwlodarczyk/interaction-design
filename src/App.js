@@ -108,7 +108,7 @@ const Home = () => (
               <div className="flipper">
                 <div className="front">
                 <h2>4.</h2>
-                  <p>Forms & user feedback</p>
+                  <p>Forms & User Feedback</p>
                 </div>
                 <div className="back">
                   <img src="./assets/week7-display.jpg" className="week-display" alt="week7"/>
@@ -243,7 +243,7 @@ const Home = () => (
                     <div className="flipper">
                       <div className="front">
                       <h2> Week 7:</h2>
-                        <p>Forms & user feedback</p>
+                        <p>Forms & User Feedback</p>
                       </div>
                       <div className="back">
                         <img src="./assets/week7-display.jpg" className="week-display" alt="week7"/>
