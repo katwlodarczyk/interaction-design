@@ -6,7 +6,11 @@
 
 ## Introduction
 
-This repository is a set of reusable React components that offer design solutions to real-world problems.
+This repository is a set of reusable React components that offer design solutions to real-world problems. Those components show the broad spectrum of posibilities of coding in React. 
+
+Five components have been supported with a research, evaluation of guidelines, design prototyping, coding, screencast and a personal reflection. 
+
+You can also see all 9 components, by clicking on the link at the bottom of the hosted page.
 
  [1. Splash Screen](#-1.-Splash-screen)
   * [Research](#-research)
@@ -48,7 +52,7 @@ This repository is a set of reusable React components that offer design solution
   * [Screencast](#-screencast-4)
   * [Reflection](#-reflection-4)
 
-
+---
 
 ## 1. Splash screen
 
@@ -331,3 +335,56 @@ The form successfully implements the best usability practices while still being 
 [^3]: GRIGSBY, J., 2018. *Progressive web apps* New York:A Book Apart. p.117
 
 [^4]: PANNAFINO, J., 2012. *Interdisciplinary interaction design*. United States: Assiduous Publishing. p.67
+
+--- 
+
+
+## 4. Modal
+
+![Modal](./src/assets/week8-display.jpg)
+
+---
+### Research
+
+As [Material Design](https://material.io/components/dialogs) explains, modal, or  *"a dialog is a type of modal window that appears in front of app content to provide critical information or ask for a decision."* The main principles of a modal are focused, direct and helpful. An open dialog box is interruptive, therefore should not be overused. There are several different types of popovers, alert, confirmation, full-screen and simple. When used properly, they will enhance the project or website. [Apple guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/views/popovers/) inform how popovers should be designed and when they should be used.
+
+---
+### Evaluation of guidelines
+
+Created modal is a simple dialog that displays more informations about the illustration of the month. The main window's minimalistic layout stays uncluttered, while still providing all the details to those who are interested. 
+
+Interaction with the other parts of the website is disabled when modal is open. To close the modal, user can either click on the close (X) button, or click/tap anywhere outside the modal window. 
+
+A popover is positioned centrally on the screen and work well on different screen sizes. 
+
+Colour palette and typography matches the rest of the website, and transitions between the windows are smooth and seamless. 
+
+---
+### Planning and design prototyping
+
+Prototyping began from the idea of displaying an image of the month. Upon clicking the 'more details' button, information about the illustration and a link to the website where image can be downloaded from are displayed.
+
+![rocket](./src/assets/rocket.png)
+
+Two-tone rocket illustration from [ManyPixels](https://www.manypixels.co/gallery/?page=1&s=rocket&style=twoColor) have been chosen as an illustration of the month. 
+
+--- 
+
+### Coding
+![week8 code](./src/assets/8.png)
+
+
+---
+### Screencast
+
+![screen cast](./src/assets/5.gif)
+
+---
+
+### Reflection
+
+Presented reusable component solves the issue of displaying all details without cluttering the minimalist layout of the main window. 
+Modal works on all screen sizes, matches the overall look of the project and is easy to use with a mouse, keyboard or on touch screen devices. Created modal is sleek and stylish.
+
+Research has helped to discover different types of dialog boxes and choose the right one for the specific purpose. 
+Guidelines from Material Design and Apple ensured the design fits within the industry standars. 
