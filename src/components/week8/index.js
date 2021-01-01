@@ -278,6 +278,7 @@ function Week8() {
                     <StyledInfo>
                         <h2>Details:</h2>
                         <StyledText>Beautiful illustration in two-color style.</StyledText>
+                        <StyledText>Colours can be customized.</StyledText>
                         <StyledText>Royalty-free to download in SVG on PNG format.</StyledText>
                         <StyledButton onClick={handleGo}>
                             { !click && 
