@@ -86,7 +86,7 @@ const StyledHeader = styled.h1`
   color: #B8A7FE;
   position: relative;
   font-size: 20px;
-  padding-top: 50px;
+  padding-top: 60px;
   width: 80%;
   display: flex;
   align-self: center;
@@ -132,7 +132,7 @@ const StyledInput = styled.input`
   background: #ffffff;
   border: 1px solid #c7c7c7;
   height: 36px;
-  width: 200px;
+  width: 75%;
   padding-left: 10px;
   font-size: 14px;
   border-radius: 6px;
@@ -147,14 +147,15 @@ const StyledSpan = styled.span`
   flex-direction: flex-row;
   justify-content: space-between;
   align-content: start;
-  width: 80%;
+  width: 87%;
 `;
 
 const StyledIcon = styled.img`
   width: 24px;
   height: 24px;
-  padding-top: 8px;
+  padding-top: 6px;
   cursor: pointer;
+  margin-top: 5px;
 `;
 
 const StyledErrorText = styled.p`
@@ -181,7 +182,7 @@ const StyledForgotLink = styled.a`
 
 const StyledButton = styled.button`
   height: 46px;
-  width: 200px;
+  width: 75%;
   background: #896EFD;
   border-radius: 6px;
   color: #ffff;
@@ -189,7 +190,7 @@ const StyledButton = styled.button`
   font-size: 16px;
   border: 0;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 5px;
   outline-color: #896EFD; 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   &:hover {

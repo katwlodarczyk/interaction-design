@@ -34,7 +34,7 @@ const StyledCloseIcon = styled.img`
     float: right;
     width: 25px;
     height: 25px;
-    margin: 0.75rem 1rem 3rem 1rem;
+    margin: 0 1rem 3rem 1rem;
     cursor: pointer;
     display: flex;
     position: absolute;
@@ -51,8 +51,13 @@ const StyledNav = styled.ul`
         text-align: right;
         list-style: none;
         padding-right: 16px;
-        margin-top: 4rem;
         cursor: pointer;
+        &:nth-child(-n+2) {
+            margin-top: 4rem;
+        }
+        &:nth-child(n+3) {
+            margin-top: 1rem;
+        }
         &:hover {
             color: grey;
         }
@@ -154,7 +159,6 @@ const StyledHeaderSection = styled.div`
 `;
 
 const StyledHamburger = styled.a`
-   margin-top: 18.760px;
    justify-content: center;
    align-content: center;
    cursor: pointer;
@@ -188,6 +192,9 @@ const StyledDropdown = styled.ul`
         aling-content: center;
         align-items: center;
         fill: currentColor;
+        & p {
+            margin-top: 14px;
+        }
     }
 `;
 
@@ -195,11 +202,11 @@ const StyledButton = styled.button`
     color: #fff;
     background-color: #1280ee;
     padding: 12px 16px;
-    font-size: 14px;
+    font-size: 13px;
     border: 0;
     border-radius: 8px;
     box-shadow: 0 0 0.5rem rgba(0,0,0,0.6);
-    margin: 180px 28px 0 28px;
+    margin: 200px 28px 0 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
